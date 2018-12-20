@@ -1,0 +1,3 @@
+/home/jedrek/Desktop/Babysitter/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/jedrek/Desktop/Babysitter/cmake-build-debug/CMakeFiles/Babysitter.dir
+/home/jedrek/Desktop/Babysitter/cmake-build-debug/CMakeFiles/edit_cache.dir
