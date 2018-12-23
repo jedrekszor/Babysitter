@@ -2,6 +2,7 @@
 #define BABYSITTER_SITTER_H
 
 #include <ios>
+#include <memory>
 
 class Order;
 
@@ -16,15 +17,16 @@ private:
     int minAge;
     int maxAge;
 public:
-    Sitter(std::string name, int maxOrders, double wage, int minAge, int maxAge);
+    Sitter(std::string name, int maxOrders, double wage, int minAge, int maxAge, double rating);
     ~Sitter();
     std::string getName();
     int getNum();
     int getMax();
     double getRating();
     double getWage();
-    void addRating();
-    virtual bool canAccept(Order* order);
+    int getMinAge();
+    int getMaxAge();
+    virtual bool canAccept(std::shared_ptr<Order> order);
 };
 
 

@@ -1,8 +1,13 @@
 #include "library/Sitter.h"
 
-Sitter::Sitter(std::string name, int maxOrders, double wage, int minAge, int maxAge)
+Sitter::Sitter(std::string name, int maxOrders, double wage, int minAge, int maxAge, double rating)
 {
-
+    this->name = name;
+    this->maxOrders = maxOrders;
+    this->wage = wage;
+    this->minAge = minAge;
+    this->maxAge = maxAge;
+    this->rating = rating;
 }
 
 Sitter::~Sitter()
@@ -12,35 +17,40 @@ Sitter::~Sitter()
 
 std::string Sitter::getName()
 {
-    return std::__cxx11::string();
+    return name;
 }
 
 int Sitter::getNum()
 {
-    return 0;
+    return ordersNum;
 }
 
 int Sitter::getMax()
 {
-    return 0;
+    return maxOrders;
 }
 
 double Sitter::getRating()
 {
-    return 0;
+    return rating;
 }
 
 double Sitter::getWage()
 {
-    return 0;
+    return wage;
 }
 
-void Sitter::addRating()
+bool Sitter::canAccept(std::shared_ptr<Order> order)
 {
 
 }
 
-bool Sitter::canAccept(Order *order)
+int Sitter::getMinAge()
 {
-    return false;
+    return minAge;
+}
+
+int Sitter::getMaxAge()
+{
+    return maxAge;
 }

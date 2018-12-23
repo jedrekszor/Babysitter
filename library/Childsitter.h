@@ -3,12 +3,16 @@
 
 #include "Babysitter.h"
 
-class Childsitter: public Babysitter
+class Childsitter: public Sitter
 {
 public:
+    Childsitter(std::string name, int maxOrders, double wage, int minAge, int maxAge, double rating);
+    void dayCare();
+    void takeToPark();
     void pickFromSchool();
     void takeToZoo();
-    void cookDinner()
+    void cookDinner();
+    bool canAccept(std::shared_ptr<Order> order);
 };
 
 #endif //BABYSITTER_CHILDSITTER_H

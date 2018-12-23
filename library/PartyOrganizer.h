@@ -6,10 +6,11 @@
 class PartyOrganizer: public Sitter
 {
 public:
+    PartyOrganizer(std::string name, int maxOrders, double wage, int minAge, int maxAge, double rating);
     void birthday();
     void carnival();
     void quinceanera();
-    bool canAccept(Order* order);
+    bool canAccept(std::shared_ptr<Order> order);
 };
 
 #endif //BABYSITTER_PARTYORGANIZER_H

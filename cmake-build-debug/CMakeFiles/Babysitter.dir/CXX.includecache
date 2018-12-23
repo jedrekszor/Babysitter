@@ -1,0 +1,42 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+..//library/Manager.h
+ios
+-
+vector
+-
+Order.h
+../library/Order.h
+Sitter.h
+../library/Sitter.h
+Babysitter.h
+../library/Babysitter.h
+
+../library/Babysitter.h
+Sitter.h
+../library/Sitter.h
+
+../library/Order.h
+ios
+-
+
+../library/Sitter.h
+ios
+-
+memory
+-
+
+/home/jedrek/Desktop/Babysitter/source/Manager.cpp
+library/Manager.h
+/home/jedrek/Desktop/Babysitter/source/library/Manager.h
+fstream
+-
+iostream
+-
+

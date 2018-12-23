@@ -1,5 +1,12 @@
 #include "library/PartyOrganizer.h"
 
+using namespace std;
+
+PartyOrganizer::PartyOrganizer(std::string name, int maxOrders, double wage, int minAge, int maxAge, double rating): Sitter(name, maxOrders, wage, minAge, maxAge, rating)
+{
+
+}
+
 void PartyOrganizer::birthday()
 {
 
@@ -15,7 +22,7 @@ void PartyOrganizer::quinceanera()
 
 }
 
-bool PartyOrganizer::canAccept(Order *order)
+bool PartyOrganizer::canAccept(shared_ptr<Order> order)
 {
     return Sitter::canAccept(order);
 }

@@ -6,9 +6,10 @@
 class Babysitter: public Sitter
 {
 public:
+    Babysitter(std::string name, int maxOrders, double wage, int minAge, int maxAge, double rating);
     void dayCare();
     void takeToPark();
-    bool canAccept(Order* order);
+    bool canAccept(std::shared_ptr<Order> order);
 };
 
 

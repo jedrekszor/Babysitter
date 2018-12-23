@@ -8,10 +8,12 @@
 class Tutor: public Sitter
 {
 private:
-    std::vector<int> subjects;
+    std::string subject1;
+    std::string subject2;
 public:
+    Tutor(std::string name, int maxOrders, double wage, int minAge, int maxAge, double rating, std::string subject1, std::string subject2);
     void teach();
-    bool canAccept(Order* order);
+    bool canAccept(std::shared_ptr<Order> order);
 };
 
 #endif //BABYSITTER_TUTOR_H

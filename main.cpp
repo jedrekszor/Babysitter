@@ -1,7 +1,8 @@
 #include <iostream>
+#include "library/Manager.h"
 
 int main()
 {
-    std::cout << "Hello, World!" << std::endl;
+    Manager manager;
     return 0;
 }
