@@ -5,8 +5,10 @@
 
 class PartyOrganizer: public Sitter
 {
+private:
+    int maxPeople;
 public:
-    PartyOrganizer(std::string name, int maxOrders, double wage, int minAge, int maxAge, double rating);
+    PartyOrganizer(std::string name, int maxOrders, double wage, int minAge, int maxAge, double rating, int maxPeople);
     void birthday();
     void carnival();
     void quinceanera();

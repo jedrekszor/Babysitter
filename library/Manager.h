@@ -6,6 +6,9 @@
 #include "Order.h"
 #include "Sitter.h"
 #include "Babysitter.h"
+#include "Childsitter.h"
+#include "PartyOrganizer.h"
+#include "Tutor.h"
 
 class Manager
 {
