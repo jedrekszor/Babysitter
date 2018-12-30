@@ -1,16 +1,15 @@
 #include "library/Babysitter.h"
-#include <iostream>
 
 using namespace std;
 
-Babysitter::Babysitter(std::string name, int maxOrders, double wage, int minAge, int maxAge, double rating): Sitter(name, maxOrders, wage, minAge, maxAge, rating)
+Babysitter::Babysitter(std::string name, int maxOrders, double wage, int minAge, int maxAge, double rating, int maxPeople) : Sitter(name, maxOrders, wage, minAge, maxAge, rating, maxPeople)
 {
 
 }
 
 void Babysitter::dayCare()
 {
-    cout<<"Daycare\n";
+    cout << "Daycare\n";
 }
 
 void Babysitter::takeToPark()
@@ -20,5 +19,49 @@ void Babysitter::takeToPark()
 
 bool Babysitter::canAccept(shared_ptr<Order> order)
 {
-    return Sitter::canAccept(order);
+    if ((order->getAge() >= getMinAge()) && (order->getAge() <= getMaxAge()))
+    {
+        if(getNum() < getMax())
+        {
+            if(order->getPeople() <= getMaxPeople())
+            {
+                fstream file;
+                string line;
+                file.open("../logs/calendar.txt", ios::in);
+
+                if (file.good())
+                {
+                    for (int i = 1; i < order->getMonth(); i++)
+                    {
+                        do
+                        {
+                            getline(file, line);
+                        }
+                        while(line != ";");
+                    }
+
+                    int day=0;
+                    for(;day<order->getDay();day++)
+                    {
+                        getline(file, line);
+                    }
+
+                    if(line.find(getName()) != string::npos)
+                    {
+                        return true;
+                    }
+                    else
+                        return false;
+                }
+                else
+                    return false;
+            }
+            else
+                return false;
+        }
+        else
+            return false;
+    }
+    else
+        return false;
 }

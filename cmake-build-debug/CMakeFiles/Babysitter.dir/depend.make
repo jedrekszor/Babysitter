@@ -11,11 +11,13 @@ CMakeFiles/Babysitter.dir/main.cpp.o: ../library/Tutor.h
 CMakeFiles/Babysitter.dir/main.cpp.o: ../main.cpp
 
 CMakeFiles/Babysitter.dir/source/Babysitter.cpp.o: ../library/Babysitter.h
+CMakeFiles/Babysitter.dir/source/Babysitter.cpp.o: ../library/Order.h
 CMakeFiles/Babysitter.dir/source/Babysitter.cpp.o: ../library/Sitter.h
 CMakeFiles/Babysitter.dir/source/Babysitter.cpp.o: ../source/Babysitter.cpp
 
 CMakeFiles/Babysitter.dir/source/Childsitter.cpp.o: ../library/Childsitter.h
 CMakeFiles/Babysitter.dir/source/Childsitter.cpp.o: ../library/Babysitter.h
+CMakeFiles/Babysitter.dir/source/Childsitter.cpp.o: ../library/Order.h
 CMakeFiles/Babysitter.dir/source/Childsitter.cpp.o: ../library/Sitter.h
 CMakeFiles/Babysitter.dir/source/Childsitter.cpp.o: ../source/Childsitter.cpp
 
@@ -32,13 +34,16 @@ CMakeFiles/Babysitter.dir/source/Order.cpp.o: ../library/Order.h
 CMakeFiles/Babysitter.dir/source/Order.cpp.o: ../source/Order.cpp
 
 CMakeFiles/Babysitter.dir/source/PartyOrganizer.cpp.o: ../library/PartyOrganizer.h
+CMakeFiles/Babysitter.dir/source/PartyOrganizer.cpp.o: ../library/Order.h
 CMakeFiles/Babysitter.dir/source/PartyOrganizer.cpp.o: ../library/Sitter.h
 CMakeFiles/Babysitter.dir/source/PartyOrganizer.cpp.o: ../source/PartyOrganizer.cpp
 
 CMakeFiles/Babysitter.dir/source/Sitter.cpp.o: ../library/Sitter.h
+CMakeFiles/Babysitter.dir/source/Sitter.cpp.o: ../library/Order.h
 CMakeFiles/Babysitter.dir/source/Sitter.cpp.o: ../source/Sitter.cpp
 
 CMakeFiles/Babysitter.dir/source/Tutor.cpp.o: ../library/Tutor.h
+CMakeFiles/Babysitter.dir/source/Tutor.cpp.o: ../library/Order.h
 CMakeFiles/Babysitter.dir/source/Tutor.cpp.o: ../library/Sitter.h
 CMakeFiles/Babysitter.dir/source/Tutor.cpp.o: ../source/Tutor.cpp
 

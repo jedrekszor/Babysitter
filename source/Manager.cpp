@@ -1,6 +1,4 @@
 #include "library/Manager.h"
-#include <fstream>
-#include <iostream>
 
 using namespace std;
 
@@ -9,7 +7,7 @@ Manager::Manager()
     fstream file;
     file.open("../logs/babysitters.txt", ios::in);
     string line;
-    string temp[8];
+    string temp[9];
     int lineNum = 1;
     if (file.good())
     {
@@ -35,13 +33,16 @@ Manager::Manager()
                 case 6:
                     temp[5] = line;
                     break;
+                case 7:
+                    temp[6] = line;
+                    break;
                 default:
                     break;
             }
             lineNum++;
-            if (lineNum == 7)
+            if (lineNum == 8)
             {
-                sitters.push_back(make_shared<Babysitter>(temp[0], stoi(temp[1]), stod(temp[2]), stoi(temp[3]), stoi(temp[4]), stod(temp[5])));
+                sitters.push_back(make_shared<Babysitter>(temp[0], stoi(temp[1]), stod(temp[2]), stoi(temp[3]), stoi(temp[4]), stod(temp[5]), stoi(temp[6])));
                 for (int i = 0; i < 8; i++)
                 {
                     temp[i].clear();
@@ -79,13 +80,16 @@ Manager::Manager()
                 case 6:
                     temp[5] = line;
                     break;
+                case 7:
+                    temp[6] = line;
+                    break;
                 default:
                     break;
             }
             lineNum++;
-            if (lineNum == 7)
+            if (lineNum == 8)
             {
-                sitters.push_back(make_shared<Childsitter>(temp[0], stoi(temp[1]), stod(temp[2]), stoi(temp[3]), stoi(temp[4]), stod(temp[5])));
+                sitters.push_back(make_shared<Childsitter>(temp[0], stoi(temp[1]), stod(temp[2]), stoi(temp[3]), stoi(temp[4]), stod(temp[5]), stoi(temp[6])));
                 for (int i = 0; i < 8; i++)
                 {
                     temp[i].clear();
@@ -176,13 +180,16 @@ Manager::Manager()
                 case 8:
                     temp[7] = line;
                     break;
+                case 9:
+                    temp[8] = line;
+                    break;
                 default:
                     break;
             }
             lineNum++;
-            if (lineNum == 9)
+            if (lineNum == 10)
             {
-                sitters.push_back(make_shared<Tutor>(temp[0], stoi(temp[1]), stod(temp[2]), stoi(temp[3]), stoi(temp[4]), stod(temp[5]), temp[6], temp[7]));
+                sitters.push_back(make_shared<Tutor>(temp[0], stoi(temp[1]), stod(temp[2]), stoi(temp[3]), stoi(temp[4]), stod(temp[5]), stoi(temp[6]), temp[7], temp[8]));
                 for (int i = 0; i < 8; i++)
                 {
                     temp[i].clear();
@@ -225,6 +232,14 @@ void Manager::setCurrent(shared_ptr<Order> current)
 void Manager::printAvailable()
 {
 
+}
+
+std::shared_ptr<Sitter> Manager::getSitter(int index)
+{
+    if(index < sitters.size())
+    {
+        return sitters[index];
+    }
 }
 
 Manager::~Manager()

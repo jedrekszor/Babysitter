@@ -1,6 +1,6 @@
 #include "library/Sitter.h"
 
-Sitter::Sitter(std::string name, int maxOrders, double wage, int minAge, int maxAge, double rating)
+Sitter::Sitter(std::string name, int maxOrders, double wage, int minAge, int maxAge, double rating, int maxPeople)
 {
     this->name = name;
     this->maxOrders = maxOrders;
@@ -8,6 +8,7 @@ Sitter::Sitter(std::string name, int maxOrders, double wage, int minAge, int max
     this->minAge = minAge;
     this->maxAge = maxAge;
     this->rating = rating;
+    this->maxPeople = maxPeople;
 }
 
 Sitter::~Sitter()
@@ -53,4 +54,9 @@ int Sitter::getMinAge()
 int Sitter::getMaxAge()
 {
     return maxAge;
+}
+
+int Sitter::getMaxPeople()
+{
+    return maxPeople;
 }

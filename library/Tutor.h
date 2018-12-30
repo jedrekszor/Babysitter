@@ -11,7 +11,7 @@ private:
     std::string subject1;
     std::string subject2;
 public:
-    Tutor(std::string name, int maxOrders, double wage, int minAge, int maxAge, double rating, std::string subject1, std::string subject2);
+    Tutor(std::string name, int maxOrders, double wage, int minAge, int maxAge, double rating, int maxPeople, std::string subject1, std::string subject2);
     void teach();
     bool canAccept(std::shared_ptr<Order> order);
 };

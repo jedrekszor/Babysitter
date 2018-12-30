@@ -6,7 +6,7 @@
 class Babysitter: public Sitter
 {
 public:
-    Babysitter(std::string name, int maxOrders, double wage, int minAge, int maxAge, double rating);
+    Babysitter(std::string name, int maxOrders, double wage, int minAge, int maxAge, double rating, int maxPeople);
     void dayCare();
     void takeToPark();
     bool canAccept(std::shared_ptr<Order> order);

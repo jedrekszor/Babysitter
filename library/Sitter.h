@@ -3,8 +3,10 @@
 
 #include <ios>
 #include <memory>
-
-class Order;
+#include <fstream>
+#include <iostream>
+#include <string>
+#include "Order.h"
 
 class Sitter
 {
@@ -16,8 +18,9 @@ private:
     double wage;
     int minAge;
     int maxAge;
+    int maxPeople;
 public:
-    Sitter(std::string name, int maxOrders, double wage, int minAge, int maxAge, double rating);
+    Sitter(std::string name, int maxOrders, double wage, int minAge, int maxAge, double rating, int maxPeople);
     ~Sitter();
     std::string getName();
     int getNum();
@@ -26,6 +29,7 @@ public:
     double getWage();
     int getMinAge();
     int getMaxAge();
+    int getMaxPeople();
     virtual bool canAccept(std::shared_ptr<Order> order);
 };
 

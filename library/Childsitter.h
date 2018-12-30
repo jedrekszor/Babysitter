@@ -6,7 +6,7 @@
 class Childsitter: public Sitter
 {
 public:
-    Childsitter(std::string name, int maxOrders, double wage, int minAge, int maxAge, double rating);
+    Childsitter(std::string name, int maxOrders, double wage, int minAge, int maxAge, double rating, int maxPeople);
     void dayCare();
     void takeToPark();
     void pickFromSchool();

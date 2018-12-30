@@ -1,8 +1,9 @@
 #ifndef BABYSITTER_MANAGER_H
 #define BABYSITTER_MANAGER_H
 
-#include <ios>
 #include <vector>
+#include <fstream>
+#include <iostream>
 #include "Order.h"
 #include "Sitter.h"
 #include "Babysitter.h"
@@ -23,6 +24,7 @@ public:
     std::shared_ptr<Order> getCurrent();
     void setCurrent(std::shared_ptr<Order> current);
     void printAvailable();
+    std::shared_ptr<Sitter> getSitter(int index);
     ~Manager();
 };
 
