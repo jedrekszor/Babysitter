@@ -1,4 +1,4 @@
-#include "library/Tutor.h"
+#include "../library/Tutor.h"
 
 using namespace std;
 
@@ -15,49 +15,54 @@ void Tutor::teach()
 
 bool Tutor::canAccept(shared_ptr<Order> order)
 {
-    if ((order->getAge() >= getMinAge()) && (order->getAge() <= getMaxAge()))
+    if(order->getService() == 2)
     {
-        if(getNum() < getMax())
+        if ((order->getAge() >= getMinAge()) && (order->getAge() <= getMaxAge()))
         {
-            if(order->getPeople() <= getMaxPeople())
+            if (getNum() < getMax())
             {
-                fstream file;
-                string line;
-                file.open("../logs/calendar.txt", ios::in);
-
-                if (file.good())
+                if (order->getPeople() <= getMaxPeople())
                 {
-                    for (int i = 1; i < order->getMonth(); i++)
+                    fstream file;
+                    string line;
+                    file.open("../logs/calendar.txt", ios::in);
+
+                    if (file.good())
                     {
-                        do
+                        for (int i = 1; i < order->getMonth(); i++)
+                        {
+                            do
+                            {
+                                getline(file, line);
+                            } while (line != ";");
+                        }
+
+                        int day = 0;
+                        for (; day < order->getDay(); day++)
                         {
                             getline(file, line);
                         }
-                        while(line != ";");
-                    }
 
-                    int day=0;
-                    for(;day<order->getDay();day++)
-                    {
-                        getline(file, line);
+                        if (line.find(getName()) == string::npos)
+                        {
+                            file.close();
+                            return true;
+                        }
                     }
-
-                    if(line.find(getName()) != string::npos)
-                    {
-                        return true;
-                    }
-                    else
-                        return false;
+                    file.close();
                 }
-                else
-                    return false;
             }
-            else
-                return false;
         }
-        else
-            return false;
     }
-    else
-        return false;
+    return false;
+}
+
+std::string Tutor::getSub1()
+{
+    return subject1;
+}
+
+std::string Tutor::getSub2()
+{
+    return subject2;
 }

@@ -39,10 +39,10 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /snap/clion/57/bin/cmake/linux/bin/cmake
+CMAKE_COMMAND = /snap/clion/58/bin/cmake/linux/bin/cmake
 
 # The command to remove a file.
-RM = /snap/clion/57/bin/cmake/linux/bin/cmake -E remove -f
+RM = /snap/clion/58/bin/cmake/linux/bin/cmake -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
@@ -59,7 +59,7 @@ CMAKE_BINARY_DIR = /home/jedrek/Desktop/Babysitter/cmake-build-debug
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/snap/clion/57/bin/cmake/linux/bin/cmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/snap/clion/58/bin/cmake/linux/bin/cmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -70,7 +70,7 @@ rebuild_cache/fast: rebuild_cache
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/snap/clion/57/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+	/snap/clion/58/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -122,6 +122,46 @@ Babysitter: cmake_check_build_system
 Babysitter/fast:
 	$(MAKE) -f CMakeFiles/Babysitter.dir/build.make CMakeFiles/Babysitter.dir/build
 .PHONY : Babysitter/fast
+
+#=============================================================================
+# Target rules for targets named Babysitter_autogen
+
+# Build rule for target.
+Babysitter_autogen: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 Babysitter_autogen
+.PHONY : Babysitter_autogen
+
+# fast build rule for target.
+Babysitter_autogen/fast:
+	$(MAKE) -f CMakeFiles/Babysitter_autogen.dir/build.make CMakeFiles/Babysitter_autogen.dir/build
+.PHONY : Babysitter_autogen/fast
+
+Babysitter_autogen/mocs_compilation.o: Babysitter_autogen/mocs_compilation.cpp.o
+
+.PHONY : Babysitter_autogen/mocs_compilation.o
+
+# target to build an object file
+Babysitter_autogen/mocs_compilation.cpp.o:
+	$(MAKE) -f CMakeFiles/Babysitter.dir/build.make CMakeFiles/Babysitter.dir/Babysitter_autogen/mocs_compilation.cpp.o
+.PHONY : Babysitter_autogen/mocs_compilation.cpp.o
+
+Babysitter_autogen/mocs_compilation.i: Babysitter_autogen/mocs_compilation.cpp.i
+
+.PHONY : Babysitter_autogen/mocs_compilation.i
+
+# target to preprocess a source file
+Babysitter_autogen/mocs_compilation.cpp.i:
+	$(MAKE) -f CMakeFiles/Babysitter.dir/build.make CMakeFiles/Babysitter.dir/Babysitter_autogen/mocs_compilation.cpp.i
+.PHONY : Babysitter_autogen/mocs_compilation.cpp.i
+
+Babysitter_autogen/mocs_compilation.s: Babysitter_autogen/mocs_compilation.cpp.s
+
+.PHONY : Babysitter_autogen/mocs_compilation.s
+
+# target to generate assembly for a file
+Babysitter_autogen/mocs_compilation.cpp.s:
+	$(MAKE) -f CMakeFiles/Babysitter.dir/build.make CMakeFiles/Babysitter.dir/Babysitter_autogen/mocs_compilation.cpp.s
+.PHONY : Babysitter_autogen/mocs_compilation.cpp.s
 
 main.o: main.cpp.o
 
@@ -339,6 +379,33 @@ source/Tutor.cpp.s:
 	$(MAKE) -f CMakeFiles/Babysitter.dir/build.make CMakeFiles/Babysitter.dir/source/Tutor.cpp.s
 .PHONY : source/Tutor.cpp.s
 
+source/UI.o: source/UI.cpp.o
+
+.PHONY : source/UI.o
+
+# target to build an object file
+source/UI.cpp.o:
+	$(MAKE) -f CMakeFiles/Babysitter.dir/build.make CMakeFiles/Babysitter.dir/source/UI.cpp.o
+.PHONY : source/UI.cpp.o
+
+source/UI.i: source/UI.cpp.i
+
+.PHONY : source/UI.i
+
+# target to preprocess a source file
+source/UI.cpp.i:
+	$(MAKE) -f CMakeFiles/Babysitter.dir/build.make CMakeFiles/Babysitter.dir/source/UI.cpp.i
+.PHONY : source/UI.cpp.i
+
+source/UI.s: source/UI.cpp.s
+
+.PHONY : source/UI.s
+
+# target to generate assembly for a file
+source/UI.cpp.s:
+	$(MAKE) -f CMakeFiles/Babysitter.dir/build.make CMakeFiles/Babysitter.dir/source/UI.cpp.s
+.PHONY : source/UI.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -348,6 +415,10 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... Babysitter"
 	@echo "... edit_cache"
+	@echo "... Babysitter_autogen"
+	@echo "... Babysitter_autogen/mocs_compilation.o"
+	@echo "... Babysitter_autogen/mocs_compilation.i"
+	@echo "... Babysitter_autogen/mocs_compilation.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
@@ -372,6 +443,9 @@ help:
 	@echo "... source/Tutor.o"
 	@echo "... source/Tutor.i"
 	@echo "... source/Tutor.s"
+	@echo "... source/UI.o"
+	@echo "... source/UI.i"
+	@echo "... source/UI.s"
 .PHONY : help
 
 

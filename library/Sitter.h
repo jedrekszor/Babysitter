@@ -12,7 +12,7 @@ class Sitter
 {
 private:
     std::string name;
-    int ordersNum;
+    int ordersNum = 0;
     int maxOrders;
     double rating;
     double wage;
@@ -30,6 +30,7 @@ public:
     int getMinAge();
     int getMaxAge();
     int getMaxPeople();
+    void addNum();
     virtual bool canAccept(std::shared_ptr<Order> order);
 };
 

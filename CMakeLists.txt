@@ -1,22 +1,34 @@
-cmake_minimum_required(VERSION 3.13)
+set(CMAKE_AUTOMOC ON)
+cmake_minimum_required(VERSION 3.10)
 project(Babysitter)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(Babysitter main.cpp source/Sitter.cpp library/Sitter.h source/Order.cpp library/Order.h source/Manager.cpp library/Manager.h source/Babysitter.cpp library/Babysitter.h source/Childsitter.cpp library/Childsitter.h source/Tutor.cpp library/Tutor.h source/PartyOrganizer.cpp library/PartyOrganizer.h)
+include_directories(library)
 
-
-# Find includes in corresponding build directories
-set(CMAKE_INCLUDE_CURRENT_DIR ON)
-# Instruct CMake to run moc automatically when needed
-set(CMAKE_AUTOMOC ON)
-# Create code from a list of Qt designer ui files
-set(CMAKE_AUTOUIC ON)
-
-# Find the QtWidgets library
 find_package(Qt5Widgets CONFIG REQUIRED)
 
-# Use the Widgets module from Qt 5
+add_executable(Babysitter
+        library/Babysitter.h
+        library/Childsitter.h
+        library/Manager.h
+        library/Order.h
+        library/PartyOrganizer.h
+        library/Sitter.h
+        library/Tutor.h
+        library/UI.h
+
+        source/Babysitter.cpp
+        source/Childsitter.cpp
+        source/Manager.cpp
+        source/Order.cpp
+        source/PartyOrganizer.cpp
+        source/Sitter.cpp
+        source/Tutor.cpp
+        source/UI.cpp
+        main.cpp
+        )
+
 target_link_libraries(Babysitter Qt5::Widgets)
 
 find_package(Qt5Core)

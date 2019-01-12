@@ -10,13 +10,15 @@ private:
     int childAge;
     int day;
     int month;
+    int service;
     int people;
 public:
-    Order(std::string childName, int childAge, int month, int day, int people);
+    Order(std::string childName, int childAge, int month, int day, int service, int people);
     std::string getName();
     int getAge();
     int getDay();
     int getMonth();
+    int getService();
     int getPeople();
 };
 

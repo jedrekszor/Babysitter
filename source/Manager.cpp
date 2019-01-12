@@ -1,4 +1,4 @@
-#include "library/Manager.h"
+#include "../library/Manager.h"
 
 using namespace std;
 
@@ -42,7 +42,10 @@ Manager::Manager()
             lineNum++;
             if (lineNum == 8)
             {
-                sitters.push_back(make_shared<Babysitter>(temp[0], stoi(temp[1]), stod(temp[2]), stoi(temp[3]), stoi(temp[4]), stod(temp[5]), stoi(temp[6])));
+                sitters.push_back(
+                        make_shared<Babysitter>(temp[0], stoi(temp[1]), stod(temp[2]), stoi(temp[3]), stoi(temp[4]),
+                                                stod(temp[5]), stoi(temp[6])));
+
                 for (int i = 0; i < 8; i++)
                 {
                     temp[i].clear();
@@ -89,7 +92,9 @@ Manager::Manager()
             lineNum++;
             if (lineNum == 8)
             {
-                sitters.push_back(make_shared<Childsitter>(temp[0], stoi(temp[1]), stod(temp[2]), stoi(temp[3]), stoi(temp[4]), stod(temp[5]), stoi(temp[6])));
+                sitters.push_back(
+                        make_shared<Childsitter>(temp[0], stoi(temp[1]), stod(temp[2]), stoi(temp[3]), stoi(temp[4]),
+                                                 stod(temp[5]), stoi(temp[6])));
                 for (int i = 0; i < 8; i++)
                 {
                     temp[i].clear();
@@ -136,7 +141,9 @@ Manager::Manager()
             lineNum++;
             if (lineNum == 8)
             {
-                sitters.push_back(make_shared<PartyOrganizer>(temp[0], stoi(temp[1]), stod(temp[2]), stoi(temp[3]), stoi(temp[4]), stod(temp[5]), stoi(temp[6])));
+                sitters.push_back(
+                        make_shared<PartyOrganizer>(temp[0], stoi(temp[1]), stod(temp[2]), stoi(temp[3]), stoi(temp[4]),
+                                                    stod(temp[5]), stoi(temp[6])));
                 for (int i = 0; i < 8; i++)
                 {
                     temp[i].clear();
@@ -189,7 +196,9 @@ Manager::Manager()
             lineNum++;
             if (lineNum == 10)
             {
-                sitters.push_back(make_shared<Tutor>(temp[0], stoi(temp[1]), stod(temp[2]), stoi(temp[3]), stoi(temp[4]), stod(temp[5]), stoi(temp[6]), temp[7], temp[8]));
+                sitters.push_back(
+                        make_shared<Tutor>(temp[0], stoi(temp[1]), stod(temp[2]), stoi(temp[3]), stoi(temp[4]),
+                                           stod(temp[5]), stoi(temp[6]), temp[7], temp[8]));
                 for (int i = 0; i < 8; i++)
                 {
                     temp[i].clear();
@@ -214,9 +223,17 @@ void Manager::printSitters(shared_ptr<Order> order)
 //    }
 }
 
-void Manager::matchOrder()
+vector<shared_ptr<Sitter>> Manager::matchOrder()
 {
-
+    vector<shared_ptr<Sitter>> matching;
+    for (auto it = sitters.begin(); it != sitters.end(); ++it)
+    {
+        if((*it)->canAccept(getCurrent()))
+        {
+            matching.push_back(*it);
+        }
+    }
+    return matching;
 }
 
 shared_ptr<Order> Manager::getCurrent()
@@ -236,10 +253,55 @@ void Manager::printAvailable()
 
 std::shared_ptr<Sitter> Manager::getSitter(int index)
 {
-    if(index < sitters.size())
+    if (index < sitters.size())
     {
         return sitters[index];
     }
+}
+
+bool Manager::saveOrder(Sitter &sitter)
+{
+    fstream file;
+    string line;
+    file.open("../logs/calendar.txt", ios::in | ios::out);
+
+    if (file.good())
+    {
+        for (int i = 1; i < getCurrent()->getMonth(); i++)
+        {
+            do
+            {
+                getline(file, line);
+            } while (line != ";");
+        }
+
+        int day = 0;
+        for (; day < getCurrent()->getDay() - 1; day++)
+        {
+            getline(file, line);
+        }
+
+        streampos oldpos = file.tellg();
+        getline(file, line);
+
+        int i;
+        for(i=line.length() - 1;line[i] == ' ';i--)
+        {}
+        i+=2;
+
+        line.insert(i, sitter.getName());
+        for(i=0;i<sitter.getName().length();i++)
+        {}
+        line.erase(line.length()-i, i);
+
+        file.seekg (oldpos);
+
+        file<<line;
+        sitter.addNum();
+
+    }
+    file.close();
+    return true;
 }
 
 Manager::~Manager()

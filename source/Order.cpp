@@ -1,13 +1,14 @@
-#include "library/Order.h"
+#include "../library/Order.h"
 
 using namespace std;
 
-Order::Order(std::string childName, int childAge, int month, int day, int people)
+Order::Order(std::string childName, int childAge, int month, int day, int service, int people)
 {
     this->childName = childName;
     this->childAge = childAge;
     this->month = month;
     this->day = day;
+    this->service = service;
     this->people = people;
 }
 
@@ -29,6 +30,11 @@ int Order::getDay()
 int Order::getMonth()
 {
     return month;
+}
+
+int Order::getService()
+{
+    return service;
 }
 
 int Order::getPeople()

@@ -1,4 +1,4 @@
-#include "library/Sitter.h"
+#include "../library/Sitter.h"
 
 Sitter::Sitter(std::string name, int maxOrders, double wage, int minAge, int maxAge, double rating, int maxPeople)
 {
@@ -59,4 +59,9 @@ int Sitter::getMaxAge()
 int Sitter::getMaxPeople()
 {
     return maxPeople;
+}
+
+void Sitter::addNum()
+{
+    ordersNum++;
 }
