@@ -98,6 +98,10 @@ void UI::match()
     {
         QLabel *sorry = new QLabel("Sorry, no sitters meet Your criteria");
         layout->addRow(sorry);
+        QPushButton *exit = new QPushButton("Exit", this);
+        layout->addRow(exit);
+
+        connect(exit, SIGNAL(clicked()), this, SLOT(exit()));
     }
     else
     {
@@ -117,7 +121,7 @@ void UI::match()
             }
             else
             {
-                temp = (*it)->getName() + ", rating: " + str + "/5, price: " + str2 + " $ / h";
+                temp = (*it)->getName() + ", rating: " + str + "/5, price: " + str2 + " $/h";
             }
             QString qtemp = QString::fromStdString(temp);
             QRadioButton *radio = new QRadioButton(qtemp);

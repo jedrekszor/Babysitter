@@ -141,6 +141,21 @@
 		<Unit filename="/home/jedrek/Desktop/Babysitter/library/UI.h">
 			<Option target="Babysitter"/>
 		</Unit>
+		<Unit filename="/home/jedrek/Desktop/Babysitter/logs/babysitters.txt">
+			<Option target="Babysitter"/>
+		</Unit>
+		<Unit filename="/home/jedrek/Desktop/Babysitter/logs/calendar.txt">
+			<Option target="Babysitter"/>
+		</Unit>
+		<Unit filename="/home/jedrek/Desktop/Babysitter/logs/childsitters.txt">
+			<Option target="Babysitter"/>
+		</Unit>
+		<Unit filename="/home/jedrek/Desktop/Babysitter/logs/partyOrganizers.txt">
+			<Option target="Babysitter"/>
+		</Unit>
+		<Unit filename="/home/jedrek/Desktop/Babysitter/logs/tutors.txt">
+			<Option target="Babysitter"/>
+		</Unit>
 		<Unit filename="/home/jedrek/Desktop/Babysitter/main.cpp">
 			<Option target="Babysitter"/>
 		</Unit>

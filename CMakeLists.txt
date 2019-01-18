@@ -27,6 +27,11 @@ add_executable(Babysitter
         source/Tutor.cpp
         source/UI.cpp
         main.cpp
+        logs/babysitters.txt
+        logs/childsitters.txt
+        logs/tutors.txt
+        logs/partyOrganizers.txt
+        logs/calendar.txt
         )
 
 target_link_libraries(Babysitter Qt5::Widgets)
