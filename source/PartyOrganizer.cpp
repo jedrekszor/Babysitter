@@ -44,7 +44,7 @@ bool PartyOrganizer::canAccept(shared_ptr<Order> order)
                             {
                                 getline(file, line);
                             }
-                            while(line != ";");
+                            while(line[0] != ';');
                         }
 
                         int day=0;

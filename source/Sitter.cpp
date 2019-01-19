@@ -2,13 +2,13 @@
 
 Sitter::Sitter(std::string name, int maxOrders, double wage, int minAge, int maxAge, double rating, int maxPeople)
 {
-    this->name = name;
-    this->maxOrders = maxOrders;
-    this->wage = wage;
-    this->minAge = minAge;
-    this->maxAge = maxAge;
-    this->rating = rating;
-    this->maxPeople = maxPeople;
+    this->_name = name;
+    this->_maxOrders = maxOrders;
+    this->_wage = wage;
+    this->_minAge = minAge;
+    this->_maxAge = maxAge;
+    this->_rating = rating;
+    this->_maxPeople = maxPeople;
 }
 
 Sitter::~Sitter()
@@ -18,27 +18,27 @@ Sitter::~Sitter()
 
 std::string Sitter::getName()
 {
-    return name;
+    return _name;
 }
 
 int Sitter::getNum()
 {
-    return ordersNum;
+    return _ordersNum;
 }
 
 int Sitter::getMax()
 {
-    return maxOrders;
+    return _maxOrders;
 }
 
 double Sitter::getRating()
 {
-    return rating;
+    return _rating;
 }
 
 double Sitter::getWage()
 {
-    return wage;
+    return _wage;
 }
 
 bool Sitter::canAccept(std::shared_ptr<Order> order)
@@ -48,20 +48,20 @@ bool Sitter::canAccept(std::shared_ptr<Order> order)
 
 int Sitter::getMinAge()
 {
-    return minAge;
+    return _minAge;
 }
 
 int Sitter::getMaxAge()
 {
-    return maxAge;
+    return _maxAge;
 }
 
 int Sitter::getMaxPeople()
 {
-    return maxPeople;
+    return _maxPeople;
 }
 
 void Sitter::addNum()
 {
-    ordersNum++;
+    _ordersNum++;
 }

@@ -42,7 +42,7 @@ Manager::Manager()
             lineNum++;
             if (lineNum == 8)
             {
-                sitters.push_back(
+                _sitters.push_back(
                         make_shared<Babysitter>(temp[0], stoi(temp[1]), stod(temp[2]), stoi(temp[3]), stoi(temp[4]),
                                                 stod(temp[5]), stoi(temp[6])));
 
@@ -92,7 +92,7 @@ Manager::Manager()
             lineNum++;
             if (lineNum == 8)
             {
-                sitters.push_back(
+                _sitters.push_back(
                         make_shared<Childsitter>(temp[0], stoi(temp[1]), stod(temp[2]), stoi(temp[3]), stoi(temp[4]),
                                                  stod(temp[5]), stoi(temp[6])));
                 for (int i = 0; i < 8; i++)
@@ -141,7 +141,7 @@ Manager::Manager()
             lineNum++;
             if (lineNum == 8)
             {
-                sitters.push_back(
+                _sitters.push_back(
                         make_shared<PartyOrganizer>(temp[0], stoi(temp[1]), stod(temp[2]), stoi(temp[3]), stoi(temp[4]),
                                                     stod(temp[5]), stoi(temp[6])));
                 for (int i = 0; i < 8; i++)
@@ -196,7 +196,7 @@ Manager::Manager()
             lineNum++;
             if (lineNum == 10)
             {
-                sitters.push_back(
+                _sitters.push_back(
                         make_shared<Tutor>(temp[0], stoi(temp[1]), stod(temp[2]), stoi(temp[3]), stoi(temp[4]),
                                            stod(temp[5]), stoi(temp[6]), temp[7], temp[8]));
                 for (int i = 0; i < 8; i++)
@@ -217,33 +217,35 @@ void Manager::printTypes(shared_ptr<Order> order)
 
 void Manager::printSitters(shared_ptr<Order> order)
 {
-//    while(!sitters.end())
+//    while(!_sitters.end())
 //    {
-//        cout<<sitters[i].info;
+//        cout<<_sitters[i].info;
 //    }
 }
 
 vector<shared_ptr<Sitter>> Manager::matchOrder()
 {
+
     vector<shared_ptr<Sitter>> matching;
-    for (auto it = sitters.begin(); it != sitters.end(); ++it)
+    for (auto it = _sitters.begin(); it != _sitters.end(); ++it)
     {
         if((*it)->canAccept(getCurrent()))
         {
             matching.push_back(*it);
         }
     }
+
     return matching;
 }
 
 shared_ptr<Order> Manager::getCurrent()
 {
-    return current;
+    return _current;
 }
 
 void Manager::setCurrent(shared_ptr<Order> current)
 {
-    this->current = current;
+    this->_current = current;
 }
 
 void Manager::printAvailable()
@@ -253,9 +255,9 @@ void Manager::printAvailable()
 
 std::shared_ptr<Sitter> Manager::getSitter(int index)
 {
-    if (index < sitters.size())
+    if (index < _sitters.size())
     {
-        return sitters[index];
+        return _sitters[index];
     }
 }
 
@@ -272,7 +274,7 @@ bool Manager::saveOrder(Sitter &sitter)
             do
             {
                 getline(file, line);
-            } while (line != ";");
+            } while (line[0] != ';');
         }
 
         int day = 0;

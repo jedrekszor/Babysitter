@@ -38,12 +38,15 @@ bool Childsitter::canAccept(shared_ptr<Order> order)
 
                     if (file.good())
                     {
+                        int count = 0;
                         for (int i = 1; i < order->getMonth(); i++)
                         {
                             do
                             {
+                                cout<<count<<endl;
+                                count++;
                                 getline(file, line);
-                            } while (line != ";");
+                            } while (line[0] != ';');
                         }
 
                         int day = 0;

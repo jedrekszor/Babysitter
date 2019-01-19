@@ -38,7 +38,7 @@ bool Babysitter::canAccept(shared_ptr<Order> order)
                             do
                             {
                                 getline(file, line);
-                            } while (line != ";");
+                            } while (line[0] != ';');
                         }
 
                         int day = 0;

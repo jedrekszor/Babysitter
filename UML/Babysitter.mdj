@@ -1,7 +1,7 @@
 {
 	"_type": "Project",
 	"_id": "AAAAAAFF+h6SjaM2Hec=",
-	"name": "Untitled",
+	"_name": "Untitled",
 	"ownedElements": [
 		{
 			"_type": "UMLModel",
@@ -9,7 +9,7 @@
 			"_parent": {
 				"$ref": "AAAAAAFF+h6SjaM2Hec="
 			},
-			"name": "Model",
+			"_name": "Model",
 			"ownedElements": [
 				{
 					"_type": "UMLClassDiagram",
@@ -17,7 +17,7 @@
 					"_parent": {
 						"$ref": "AAAAAAFF+qBWK6M3Z8Y="
 					},
-					"name": "Babysitter",
+					"_name": "Babysitter",
 					"defaultDiagram": true,
 					"ownedViews": [
 						{
@@ -135,7 +135,7 @@
 											"top": 38,
 											"width": 524.92578125,
 											"height": 13,
-											"text": "-name: string",
+											"text": "-_name: string",
 											"horizontalAlignment": 0
 										},
 										{
@@ -152,7 +152,7 @@
 											"top": 53,
 											"width": 524.92578125,
 											"height": 13,
-											"text": "-ordersNum: int",
+											"text": "-_ordersNum: int",
 											"horizontalAlignment": 0
 										},
 										{
@@ -169,7 +169,7 @@
 											"top": 68,
 											"width": 524.92578125,
 											"height": 13,
-											"text": "-maxOrders: int",
+											"text": "-_maxOrders: int",
 											"horizontalAlignment": 0
 										},
 										{
@@ -186,7 +186,7 @@
 											"top": 83,
 											"width": 524.92578125,
 											"height": 13,
-											"text": "-rating: double",
+											"text": "-_rating: double",
 											"horizontalAlignment": 0
 										},
 										{
@@ -203,7 +203,7 @@
 											"top": 98,
 											"width": 524.92578125,
 											"height": 13,
-											"text": "-wage: double",
+											"text": "-_wage: double",
 											"horizontalAlignment": 0
 										},
 										{
@@ -220,7 +220,7 @@
 											"top": 113,
 											"width": 524.92578125,
 											"height": 13,
-											"text": "-minAge: int",
+											"text": "-_minAge: int",
 											"horizontalAlignment": 0
 										},
 										{
@@ -237,7 +237,7 @@
 											"top": 128,
 											"width": 524.92578125,
 											"height": 13,
-											"text": "-maxAge: int",
+											"text": "-_maxAge: int",
 											"horizontalAlignment": 0
 										}
 									],
@@ -271,7 +271,7 @@
 											"top": 151,
 											"width": 524.92578125,
 											"height": 13,
-											"text": "«Constructor»+Sitter(name: string, maxOrders: int, wage: double, minAge: int, maxAge: int)",
+											"text": "«Constructor»+Sitter(_name: string, _maxOrders: int, _wage: double, _minAge: int, _maxAge: int)",
 											"horizontalAlignment": 0
 										},
 										{
@@ -1911,7 +1911,7 @@
 											"top": 86,
 											"width": 502.55029296875,
 											"height": 13,
-											"text": "-childName: string",
+											"text": "-_childName: string",
 											"horizontalAlignment": 0
 										},
 										{
@@ -1928,7 +1928,7 @@
 											"top": 101,
 											"width": 502.55029296875,
 											"height": 13,
-											"text": "-childAge: int",
+											"text": "-_childAge: int",
 											"horizontalAlignment": 0
 										},
 										{
@@ -1962,7 +1962,7 @@
 											"top": 131,
 											"width": 502.55029296875,
 											"height": 13,
-											"text": "-day: int",
+											"text": "-_day: int",
 											"horizontalAlignment": 0
 										},
 										{
@@ -1979,7 +1979,7 @@
 											"top": 146,
 											"width": 502.55029296875,
 											"height": 13,
-											"text": "-month: int",
+											"text": "-_month: int",
 											"horizontalAlignment": 0
 										}
 									],
@@ -2013,7 +2013,7 @@
 											"top": 169,
 											"width": 502.55029296875,
 											"height": 13,
-											"text": "«Constructor»+Order(childName: string, childAge: int, gender: bool, day: int, month: int)",
+											"text": "«Constructor»+Order(_childName: string, _childAge: int, gender: bool, _day: int, _month: int)",
 											"horizontalAlignment": 0
 										}
 									],
@@ -2194,7 +2194,7 @@
 											"top": 510,
 											"width": 315.37060546875,
 											"height": 13,
-											"text": "-current: Order*",
+											"text": "-_current: Order*",
 											"horizontalAlignment": 0
 										}
 									],
@@ -2313,7 +2313,7 @@
 											"top": 608,
 											"width": 315.37060546875,
 											"height": 13,
-											"text": "+setCurrent(current: Order*): void",
+											"text": "+setCurrent(_current: Order*): void",
 											"horizontalAlignment": 0
 										},
 										{
@@ -2757,7 +2757,7 @@
 										"$ref": "AAAAAAFnvJ3P7yFMG7M="
 									},
 									"edgePosition": 1,
-									"text": "+sitters"
+									"text": "+_sitters"
 								},
 								{
 									"_type": "EdgeLabelView",
@@ -3038,7 +3038,7 @@
 					"_parent": {
 						"$ref": "AAAAAAFF+qBWK6M3Z8Y="
 					},
-					"name": "Sitter",
+					"_name": "Sitter",
 					"ownedElements": [
 						{
 							"_type": "UMLAssociation",
@@ -3129,7 +3129,7 @@
 							"_parent": {
 								"$ref": "AAAAAAFnu844kM3DIRs="
 							},
-							"name": "sitters",
+							"_name": "_sitters",
 							"end1": {
 								"_type": "UMLAssociationEnd",
 								"_id": "AAAAAAFnvIvnVvjgvPg=",
@@ -3159,7 +3159,7 @@
 							"_parent": {
 								"$ref": "AAAAAAFnu844kM3DIRs="
 							},
-							"name": "sitters",
+							"_name": "_sitters",
 							"end1": {
 								"_type": "UMLAssociationEnd",
 								"_id": "AAAAAAFnvJ3P7yFJgUE=",
@@ -3219,7 +3219,7 @@
 							"_parent": {
 								"$ref": "AAAAAAFnu844kM3DIRs="
 							},
-							"name": "name",
+							"_name": "_name",
 							"visibility": "private",
 							"type": "string"
 						},
@@ -3229,7 +3229,7 @@
 							"_parent": {
 								"$ref": "AAAAAAFnu844kM3DIRs="
 							},
-							"name": "ordersNum",
+							"_name": "_ordersNum",
 							"visibility": "private",
 							"type": "int"
 						},
@@ -3239,7 +3239,7 @@
 							"_parent": {
 								"$ref": "AAAAAAFnu844kM3DIRs="
 							},
-							"name": "maxOrders",
+							"_name": "_maxOrders",
 							"visibility": "private",
 							"type": "int"
 						},
@@ -3249,7 +3249,7 @@
 							"_parent": {
 								"$ref": "AAAAAAFnu844kM3DIRs="
 							},
-							"name": "rating",
+							"_name": "_rating",
 							"visibility": "private",
 							"type": "double"
 						},
@@ -3259,7 +3259,7 @@
 							"_parent": {
 								"$ref": "AAAAAAFnu844kM3DIRs="
 							},
-							"name": "wage",
+							"_name": "_wage",
 							"visibility": "private",
 							"type": "double"
 						},
@@ -3269,7 +3269,7 @@
 							"_parent": {
 								"$ref": "AAAAAAFnu844kM3DIRs="
 							},
-							"name": "minAge",
+							"_name": "_minAge",
 							"visibility": "private",
 							"type": "int"
 						},
@@ -3279,7 +3279,7 @@
 							"_parent": {
 								"$ref": "AAAAAAFnu844kM3DIRs="
 							},
-							"name": "maxAge",
+							"_name": "_maxAge",
 							"visibility": "private",
 							"type": "int"
 						}
@@ -3291,7 +3291,7 @@
 							"_parent": {
 								"$ref": "AAAAAAFnu844kM3DIRs="
 							},
-							"name": "Sitter",
+							"_name": "Sitter",
 							"stereotype": "Constructor",
 							"parameters": [
 								{
@@ -3300,7 +3300,7 @@
 									"_parent": {
 										"$ref": "AAAAAAFnu9TRss/GM6U="
 									},
-									"name": "name",
+									"_name": "_name",
 									"type": "string"
 								},
 								{
@@ -3309,7 +3309,7 @@
 									"_parent": {
 										"$ref": "AAAAAAFnu9TRss/GM6U="
 									},
-									"name": "maxOrders",
+									"_name": "_maxOrders",
 									"type": "int"
 								},
 								{
@@ -3318,7 +3318,7 @@
 									"_parent": {
 										"$ref": "AAAAAAFnu9TRss/GM6U="
 									},
-									"name": "wage",
+									"_name": "_wage",
 									"type": "double"
 								},
 								{
@@ -3327,7 +3327,7 @@
 									"_parent": {
 										"$ref": "AAAAAAFnu9TRss/GM6U="
 									},
-									"name": "minAge",
+									"_name": "_minAge",
 									"type": "int"
 								},
 								{
@@ -3336,7 +3336,7 @@
 									"_parent": {
 										"$ref": "AAAAAAFnu9TRss/GM6U="
 									},
-									"name": "maxAge",
+									"_name": "_maxAge",
 									"type": "int"
 								}
 							]
@@ -3347,7 +3347,7 @@
 							"_parent": {
 								"$ref": "AAAAAAFnu844kM3DIRs="
 							},
-							"name": "~Sitter",
+							"_name": "~Sitter",
 							"stereotype": "Destructor",
 							"specification": "()"
 						},
@@ -3357,7 +3357,7 @@
 							"_parent": {
 								"$ref": "AAAAAAFnu844kM3DIRs="
 							},
-							"name": "getName",
+							"_name": "getName",
 							"parameters": [
 								{
 									"_type": "UMLParameter",
@@ -3376,7 +3376,7 @@
 							"_parent": {
 								"$ref": "AAAAAAFnu844kM3DIRs="
 							},
-							"name": "getNum",
+							"_name": "getNum",
 							"parameters": [
 								{
 									"_type": "UMLParameter",
@@ -3395,7 +3395,7 @@
 							"_parent": {
 								"$ref": "AAAAAAFnu844kM3DIRs="
 							},
-							"name": "getMax",
+							"_name": "getMax",
 							"parameters": [
 								{
 									"_type": "UMLParameter",
@@ -3414,7 +3414,7 @@
 							"_parent": {
 								"$ref": "AAAAAAFnu844kM3DIRs="
 							},
-							"name": "getRating",
+							"_name": "getRating",
 							"parameters": [
 								{
 									"_type": "UMLParameter",
@@ -3433,7 +3433,7 @@
 							"_parent": {
 								"$ref": "AAAAAAFnu844kM3DIRs="
 							},
-							"name": "getWage",
+							"_name": "getWage",
 							"parameters": [
 								{
 									"_type": "UMLParameter",
@@ -3452,7 +3452,7 @@
 							"_parent": {
 								"$ref": "AAAAAAFnu844kM3DIRs="
 							},
-							"name": "addRating",
+							"_name": "addRating",
 							"parameters": [
 								{
 									"_type": "UMLParameter",
@@ -3471,7 +3471,7 @@
 							"_parent": {
 								"$ref": "AAAAAAFnu844kM3DIRs="
 							},
-							"name": "canAccept",
+							"_name": "canAccept",
 							"stereotype": "virtual",
 							"parameters": [
 								{
@@ -3480,7 +3480,7 @@
 									"_parent": {
 										"$ref": "AAAAAAFnvI+9pQFHgdA="
 									},
-									"name": "order",
+									"_name": "order",
 									"type": "Order*"
 								},
 								{
@@ -3502,7 +3502,7 @@
 					"_parent": {
 						"$ref": "AAAAAAFF+qBWK6M3Z8Y="
 					},
-					"name": "Class1"
+					"_name": "Class1"
 				},
 				{
 					"_type": "UMLClass",
@@ -3510,7 +3510,7 @@
 					"_parent": {
 						"$ref": "AAAAAAFF+qBWK6M3Z8Y="
 					},
-					"name": "Babysitter",
+					"_name": "Babysitter",
 					"ownedElements": [
 						{
 							"_type": "UMLGeneralization",
@@ -3533,7 +3533,7 @@
 							"_parent": {
 								"$ref": "AAAAAAFnu850As6YMZ8="
 							},
-							"name": "dayCare",
+							"_name": "dayCare",
 							"parameters": [
 								{
 									"_type": "UMLParameter",
@@ -3552,7 +3552,7 @@
 							"_parent": {
 								"$ref": "AAAAAAFnu850As6YMZ8="
 							},
-							"name": "takeToPark",
+							"_name": "takeToPark",
 							"parameters": [
 								{
 									"_type": "UMLParameter",
@@ -3571,7 +3571,7 @@
 							"_parent": {
 								"$ref": "AAAAAAFnu850As6YMZ8="
 							},
-							"name": "canAccept",
+							"_name": "canAccept",
 							"parameters": [
 								{
 									"_type": "UMLParameter",
@@ -3579,7 +3579,7 @@
 									"_parent": {
 										"$ref": "AAAAAAFnvJCUPQHo6E8="
 									},
-									"name": "order",
+									"_name": "order",
 									"type": "Order*"
 								},
 								{
@@ -3601,7 +3601,7 @@
 					"_parent": {
 						"$ref": "AAAAAAFF+qBWK6M3Z8Y="
 					},
-					"name": "Childsitter",
+					"_name": "Childsitter",
 					"ownedElements": [
 						{
 							"_type": "UMLGeneralization",
@@ -3624,7 +3624,7 @@
 							"_parent": {
 								"$ref": "AAAAAAFnu87Dh87V1pE="
 							},
-							"name": "pickFromSchool",
+							"_name": "pickFromSchool",
 							"parameters": [
 								{
 									"_type": "UMLParameter",
@@ -3643,7 +3643,7 @@
 							"_parent": {
 								"$ref": "AAAAAAFnu87Dh87V1pE="
 							},
-							"name": "takeToZoo",
+							"_name": "takeToZoo",
 							"parameters": [
 								{
 									"_type": "UMLParameter",
@@ -3662,7 +3662,7 @@
 							"_parent": {
 								"$ref": "AAAAAAFnu87Dh87V1pE="
 							},
-							"name": "cookDinner",
+							"_name": "cookDinner",
 							"parameters": [
 								{
 									"_type": "UMLParameter",
@@ -3683,7 +3683,7 @@
 					"_parent": {
 						"$ref": "AAAAAAFF+qBWK6M3Z8Y="
 					},
-					"name": "Tutor",
+					"_name": "Tutor",
 					"ownedElements": [
 						{
 							"_type": "UMLGeneralization",
@@ -3706,7 +3706,7 @@
 							"_parent": {
 								"$ref": "AAAAAAFnu89Kk88VkCM="
 							},
-							"name": "subjects",
+							"_name": "subjects",
 							"stereotype": "vector",
 							"type": "int"
 						},
@@ -3716,7 +3716,7 @@
 							"_parent": {
 								"$ref": "AAAAAAFnu89Kk88VkCM="
 							},
-							"name": "subjectsID",
+							"_name": "subjectsID",
 							"stereotype": "enum",
 							"type": ""
 						}
@@ -3728,7 +3728,7 @@
 							"_parent": {
 								"$ref": "AAAAAAFnu89Kk88VkCM="
 							},
-							"name": "teach",
+							"_name": "teach",
 							"parameters": [
 								{
 									"_type": "UMLParameter",
@@ -3747,7 +3747,7 @@
 							"_parent": {
 								"$ref": "AAAAAAFnu89Kk88VkCM="
 							},
-							"name": "canAccept",
+							"_name": "canAccept",
 							"parameters": [
 								{
 									"_type": "UMLParameter",
@@ -3755,7 +3755,7 @@
 									"_parent": {
 										"$ref": "AAAAAAFnvJGO8wKoxKY="
 									},
-									"name": "order",
+									"_name": "order",
 									"type": "Order*"
 								},
 								{
@@ -3777,7 +3777,7 @@
 					"_parent": {
 						"$ref": "AAAAAAFF+qBWK6M3Z8Y="
 					},
-					"name": "PartyOrganizer",
+					"_name": "PartyOrganizer",
 					"ownedElements": [
 						{
 							"_type": "UMLGeneralization",
@@ -3800,7 +3800,7 @@
 							"_parent": {
 								"$ref": "AAAAAAFnu9AMjc9UtHg="
 							},
-							"name": "birthday",
+							"_name": "birthday",
 							"parameters": [
 								{
 									"_type": "UMLParameter",
@@ -3819,7 +3819,7 @@
 							"_parent": {
 								"$ref": "AAAAAAFnu9AMjc9UtHg="
 							},
-							"name": "carnival",
+							"_name": "carnival",
 							"parameters": [
 								{
 									"_type": "UMLParameter",
@@ -3838,7 +3838,7 @@
 							"_parent": {
 								"$ref": "AAAAAAFnu9AMjc9UtHg="
 							},
-							"name": "quinceanera",
+							"_name": "quinceanera",
 							"parameters": [
 								{
 									"_type": "UMLParameter",
@@ -3857,7 +3857,7 @@
 							"_parent": {
 								"$ref": "AAAAAAFnu9AMjc9UtHg="
 							},
-							"name": "canAccept",
+							"_name": "canAccept",
 							"parameters": [
 								{
 									"_type": "UMLParameter",
@@ -3865,7 +3865,7 @@
 									"_parent": {
 										"$ref": "AAAAAAFnvJIpoQOKewg="
 									},
-									"name": "order",
+									"_name": "order",
 									"type": "Order*"
 								},
 								{
@@ -3887,7 +3887,7 @@
 					"_parent": {
 						"$ref": "AAAAAAFF+qBWK6M3Z8Y="
 					},
-					"name": "Order",
+					"_name": "Order",
 					"ownedElements": [
 						{
 							"_type": "UMLAssociation",
@@ -3895,7 +3895,7 @@
 							"_parent": {
 								"$ref": "AAAAAAFnu/C/NNEDD2E="
 							},
-							"name": "gigs",
+							"_name": "gigs",
 							"end1": {
 								"_type": "UMLAssociationEnd",
 								"_id": "AAAAAAFnu/ahJ9FqWtg=",
@@ -3926,7 +3926,7 @@
 							"_parent": {
 								"$ref": "AAAAAAFnu/C/NNEDD2E="
 							},
-							"name": "gigs",
+							"_name": "gigs",
 							"end1": {
 								"_type": "UMLAssociationEnd",
 								"_id": "AAAAAAFnu/qJ7dLpqMs=",
@@ -4012,7 +4012,7 @@
 							"_parent": {
 								"$ref": "AAAAAAFnu/C/NNEDD2E="
 							},
-							"name": "orders",
+							"_name": "orders",
 							"end1": {
 								"_type": "UMLAssociationEnd",
 								"_id": "AAAAAAFnvIvSCfiC1I4=",
@@ -4042,7 +4042,7 @@
 							"_parent": {
 								"$ref": "AAAAAAFnu/C/NNEDD2E="
 							},
-							"name": "orders",
+							"_name": "orders",
 							"end1": {
 								"_type": "UMLAssociationEnd",
 								"_id": "AAAAAAFnvJ3AKiDZag0=",
@@ -4074,7 +4074,7 @@
 							"_parent": {
 								"$ref": "AAAAAAFnu/C/NNEDD2E="
 							},
-							"name": "childName",
+							"_name": "_childName",
 							"visibility": "private",
 							"type": "string"
 						},
@@ -4084,7 +4084,7 @@
 							"_parent": {
 								"$ref": "AAAAAAFnu/C/NNEDD2E="
 							},
-							"name": "childAge",
+							"_name": "_childAge",
 							"visibility": "private",
 							"type": "int"
 						},
@@ -4094,7 +4094,7 @@
 							"_parent": {
 								"$ref": "AAAAAAFnu/C/NNEDD2E="
 							},
-							"name": "gender",
+							"_name": "gender",
 							"visibility": "private",
 							"type": "bool"
 						},
@@ -4104,7 +4104,7 @@
 							"_parent": {
 								"$ref": "AAAAAAFnu/C/NNEDD2E="
 							},
-							"name": "day",
+							"_name": "_day",
 							"visibility": "private",
 							"type": "int"
 						},
@@ -4114,7 +4114,7 @@
 							"_parent": {
 								"$ref": "AAAAAAFnu/C/NNEDD2E="
 							},
-							"name": "month",
+							"_name": "_month",
 							"visibility": "private",
 							"type": "int"
 						}
@@ -4126,7 +4126,7 @@
 							"_parent": {
 								"$ref": "AAAAAAFnu/C/NNEDD2E="
 							},
-							"name": "Order",
+							"_name": "Order",
 							"stereotype": "Constructor",
 							"parameters": [
 								{
@@ -4135,7 +4135,7 @@
 									"_parent": {
 										"$ref": "AAAAAAFnu/KBkdFFOak="
 									},
-									"name": "childName",
+									"_name": "_childName",
 									"type": "string"
 								},
 								{
@@ -4144,7 +4144,7 @@
 									"_parent": {
 										"$ref": "AAAAAAFnu/KBkdFFOak="
 									},
-									"name": "childAge",
+									"_name": "_childAge",
 									"type": "int"
 								},
 								{
@@ -4153,7 +4153,7 @@
 									"_parent": {
 										"$ref": "AAAAAAFnu/KBkdFFOak="
 									},
-									"name": "gender",
+									"_name": "gender",
 									"type": "bool"
 								},
 								{
@@ -4162,7 +4162,7 @@
 									"_parent": {
 										"$ref": "AAAAAAFnu/KBkdFFOak="
 									},
-									"name": "day",
+									"_name": "_day",
 									"type": "int"
 								},
 								{
@@ -4171,7 +4171,7 @@
 									"_parent": {
 										"$ref": "AAAAAAFnu/KBkdFFOak="
 									},
-									"name": "month",
+									"_name": "_month",
 									"type": "int"
 								}
 							]
@@ -4184,7 +4184,7 @@
 					"_parent": {
 						"$ref": "AAAAAAFF+qBWK6M3Z8Y="
 					},
-					"name": "Manager",
+					"_name": "Manager",
 					"ownedElements": [
 						{
 							"_type": "UMLAssociation",
@@ -4390,7 +4390,7 @@
 							"_parent": {
 								"$ref": "AAAAAAFnu/hYt9IgwoY="
 							},
-							"name": "current",
+							"_name": "_current",
 							"visibility": "private",
 							"type": "Order*"
 						}
@@ -4402,7 +4402,7 @@
 							"_parent": {
 								"$ref": "AAAAAAFnu/hYt9IgwoY="
 							},
-							"name": "Manager",
+							"_name": "Manager",
 							"stereotype": "Constructor"
 						},
 						{
@@ -4411,7 +4411,7 @@
 							"_parent": {
 								"$ref": "AAAAAAFnu/hYt9IgwoY="
 							},
-							"name": "printTypes",
+							"_name": "printTypes",
 							"parameters": [
 								{
 									"_type": "UMLParameter",
@@ -4428,7 +4428,7 @@
 									"_parent": {
 										"$ref": "AAAAAAFnvAFk7tSBcxE="
 									},
-									"name": "order",
+									"_name": "order",
 									"type": "Order*"
 								}
 							]
@@ -4439,7 +4439,7 @@
 							"_parent": {
 								"$ref": "AAAAAAFnu/hYt9IgwoY="
 							},
-							"name": "printSitters",
+							"_name": "printSitters",
 							"parameters": [
 								{
 									"_type": "UMLParameter",
@@ -4447,7 +4447,7 @@
 									"_parent": {
 										"$ref": "AAAAAAFnvJfXLAzpkuI="
 									},
-									"name": "order",
+									"_name": "order",
 									"type": "Order*"
 								},
 								{
@@ -4456,7 +4456,7 @@
 									"_parent": {
 										"$ref": "AAAAAAFnvJfXLAzpkuI="
 									},
-									"name": "type",
+									"_name": "type",
 									"type": "int"
 								},
 								{
@@ -4476,7 +4476,7 @@
 							"_parent": {
 								"$ref": "AAAAAAFnu/hYt9IgwoY="
 							},
-							"name": "matchOrder",
+							"_name": "matchOrder",
 							"parameters": [
 								{
 									"_type": "UMLParameter",
@@ -4495,7 +4495,7 @@
 							"_parent": {
 								"$ref": "AAAAAAFnu/hYt9IgwoY="
 							},
-							"name": "getCurrent",
+							"_name": "getCurrent",
 							"parameters": [
 								{
 									"_type": "UMLParameter",
@@ -4514,7 +4514,7 @@
 							"_parent": {
 								"$ref": "AAAAAAFnu/hYt9IgwoY="
 							},
-							"name": "setCurrent",
+							"_name": "setCurrent",
 							"parameters": [
 								{
 									"_type": "UMLParameter",
@@ -4522,7 +4522,7 @@
 									"_parent": {
 										"$ref": "AAAAAAFnvKgcKkgrJKY="
 									},
-									"name": "current",
+									"_name": "_current",
 									"type": "Order*"
 								},
 								{
@@ -4542,7 +4542,7 @@
 							"_parent": {
 								"$ref": "AAAAAAFnu/hYt9IgwoY="
 							},
-							"name": "printAvailable",
+							"_name": "printAvailable",
 							"parameters": [
 								{
 									"_type": "UMLParameter",
@@ -4563,7 +4563,7 @@
 					"_parent": {
 						"$ref": "AAAAAAFF+qBWK6M3Z8Y="
 					},
-					"name": "Calendar",
+					"_name": "Calendar",
 					"ownedElements": [
 						{
 							"_type": "UMLAssociation",
@@ -4602,7 +4602,7 @@
 					"_parent": {
 						"$ref": "AAAAAAFF+qBWK6M3Z8Y="
 					},
-					"name": "Enumeration1"
+					"_name": "Enumeration1"
 				},
 				{
 					"_type": "UMLClass",
@@ -4610,7 +4610,7 @@
 					"_parent": {
 						"$ref": "AAAAAAFF+qBWK6M3Z8Y="
 					},
-					"name": "SittersBase",
+					"_name": "SittersBase",
 					"stereotype": "txt file"
 				},
 				{
@@ -4619,7 +4619,7 @@
 					"_parent": {
 						"$ref": "AAAAAAFF+qBWK6M3Z8Y="
 					},
-					"name": "OrdersBase",
+					"_name": "OrdersBase",
 					"stereotype": "txt file"
 				},
 				{
@@ -4628,7 +4628,7 @@
 					"_parent": {
 						"$ref": "AAAAAAFF+qBWK6M3Z8Y="
 					},
-					"name": "sitterTypes",
+					"_name": "sitterTypes",
 					"literals": [
 						{
 							"_type": "UMLEnumerationLiteral",
@@ -4636,7 +4636,7 @@
 							"_parent": {
 								"$ref": "AAAAAAFnvKZ+CUAjCq0="
 							},
-							"name": "babysitter"
+							"_name": "babysitter"
 						},
 						{
 							"_type": "UMLEnumerationLiteral",
@@ -4644,7 +4644,7 @@
 							"_parent": {
 								"$ref": "AAAAAAFnvKZ+CUAjCq0="
 							},
-							"name": "childsitter"
+							"_name": "childsitter"
 						},
 						{
 							"_type": "UMLEnumerationLiteral",
@@ -4652,7 +4652,7 @@
 							"_parent": {
 								"$ref": "AAAAAAFnvKZ+CUAjCq0="
 							},
-							"name": "tutor"
+							"_name": "tutor"
 						},
 						{
 							"_type": "UMLEnumerationLiteral",
@@ -4660,7 +4660,7 @@
 							"_parent": {
 								"$ref": "AAAAAAFnvKZ+CUAjCq0="
 							},
-							"name": "partOrganizer"
+							"_name": "partOrganizer"
 						}
 					]
 				}

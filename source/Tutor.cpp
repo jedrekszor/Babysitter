@@ -4,8 +4,8 @@ using namespace std;
 
 Tutor::Tutor(std::string name, int maxOrders, double wage, int minAge, int maxAge, double rating, int maxPeople, string subject1, string subject2): Sitter(name, maxOrders, wage, minAge, maxAge, rating, maxPeople)
 {
-    this->subject1 = subject1;
-    this->subject2 = subject2;
+    this->_subject1 = subject1;
+    this->_subject2 = subject2;
 }
 
 void Tutor::teach()
@@ -34,7 +34,7 @@ bool Tutor::canAccept(shared_ptr<Order> order)
                             do
                             {
                                 getline(file, line);
-                            } while (line != ";");
+                            } while (line[0] != ';');
                         }
 
                         int day = 0;
@@ -59,10 +59,10 @@ bool Tutor::canAccept(shared_ptr<Order> order)
 
 std::string Tutor::getSub1()
 {
-    return subject1;
+    return _subject1;
 }
 
 std::string Tutor::getSub2()
 {
-    return subject2;
+    return _subject2;
 }

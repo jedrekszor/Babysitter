@@ -16,8 +16,8 @@
 class Manager
 {
 private:
-    std::shared_ptr<Order> current;
-    std::vector<std::shared_ptr<Sitter>> sitters;
+    std::shared_ptr<Order> _current;
+    std::vector<std::shared_ptr<Sitter>> _sitters;
 public:
     Manager();
     void printTypes(std::shared_ptr<Order> order);
