@@ -1,6 +1,8 @@
 file(REMOVE_RECURSE
   "Babysitter_autogen"
   "CMakeFiles/Babysitter_autogen.dir/AutogenOldSettings.txt"
+  "TestBabysitter_autogen"
+  "CMakeFiles/TestBabysitter_autogen.dir/AutogenOldSettings.txt"
   "CMakeFiles/Babysitter_autogen"
   "Babysitter_autogen/mocs_compilation.cpp"
 )

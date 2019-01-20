@@ -1,2 +1,3 @@
 # Hashes of file build rules.
-73c089a75edbce10473dfe29606641d6 CMakeFiles/Babysitter_autogen
+2d2105d43b63a867d03d707816ab5ecb CMakeFiles/Babysitter_autogen
+7d871f58d0c5c5910f5897c7b884b5e8 CMakeFiles/TestBabysitter_autogen

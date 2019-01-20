@@ -26,6 +26,7 @@ set(CMAKE_MAKEFILE_DEPENDS
   "/snap/clion/58/bin/cmake/linux/share/cmake-3.13/Modules/Compiler/GNU-C.cmake"
   "/snap/clion/58/bin/cmake/linux/share/cmake-3.13/Modules/Compiler/GNU-CXX.cmake"
   "/snap/clion/58/bin/cmake/linux/share/cmake-3.13/Modules/Compiler/GNU.cmake"
+  "/snap/clion/58/bin/cmake/linux/share/cmake-3.13/Modules/FindBoost.cmake"
   "/snap/clion/58/bin/cmake/linux/share/cmake-3.13/Modules/Platform/Linux-GNU-C.cmake"
   "/snap/clion/58/bin/cmake/linux/share/cmake-3.13/Modules/Platform/Linux-GNU-CXX.cmake"
   "/snap/clion/58/bin/cmake/linux/share/cmake-3.13/Modules/Platform/Linux-GNU.cmake"
@@ -55,11 +56,14 @@ set(CMAKE_MAKEFILE_OUTPUTS
 # Byproducts of CMake generate step:
 set(CMAKE_MAKEFILE_PRODUCTS
   "CMakeFiles/Babysitter_autogen.dir/AutogenInfo.cmake"
+  "CMakeFiles/TestBabysitter_autogen.dir/AutogenInfo.cmake"
   "CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/Babysitter.dir/DependInfo.cmake"
+  "CMakeFiles/TestBabysitter.dir/DependInfo.cmake"
   "CMakeFiles/Babysitter_autogen.dir/DependInfo.cmake"
+  "CMakeFiles/TestBabysitter_autogen.dir/DependInfo.cmake"
   )

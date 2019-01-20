@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="testBabysitter"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;CMake Files\program\;CMake Files\..\;CMake Files\..\..\;CMake Files\..\..\..\;CMake Files\..\..\..\..\;CMake Files\..\..\..\..\..\;CMake Files\..\..\..\..\..\..\;CMake Files\..\..\..\..\..\..\usr\;CMake Files\..\..\..\..\..\..\usr\lib\;CMake Files\..\..\..\..\..\..\usr\lib\x86_64-linux-gnu\;CMake Files\..\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\;CMake Files\..\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt5\;CMake Files\..\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt5Core\;CMake Files\..\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt5PrintSupport\;CMake Files\..\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt5Widgets\;CMake Files\..\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt5Gui\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/home/antoni/Desktop/projects/OOP_babysitter/Babysitter/cmake-build-debug/program"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/antoni/Desktop/projects/OOP_babysitter/Babysitter/cmake-build-debug/program/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/antoni/Desktop/projects/OOP_babysitter/Babysitter/cmake-build-debug/program/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/antoni/Desktop/projects/OOP_babysitter/Babysitter/cmake-build-debug/program/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/antoni/Desktop/projects/OOP_babysitter/Babysitter/cmake-build-debug/program/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="testBabysitter">
+				<Option output="/home/antoni/Desktop/projects/OOP_babysitter/Babysitter/cmake-build-debug/bin/testBabysitter" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/antoni/Desktop/projects/OOP_babysitter/Babysitter/cmake-build-debug/program"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DQT_WIDGETS_LIB"/>
+					<Add option="-DQT_GUI_LIB"/>
+					<Add option="-DQT_CORE_LIB"/>
+					<Add option="-DQT_PRINTSUPPORT_LIB"/>
+					<Add directory="/home/antoni/Desktop/projects/OOP_babysitter/Babysitter/program/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/qt5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/qt5/QtWidgets"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/qt5/QtGui"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/qt5/QtCore"/>
+					<Add directory="/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/qt5/QtPrintSupport"/>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/antoni/Desktop/projects/OOP_babysitter/Babysitter/cmake-build-debug/program/Makefile&quot;  VERBOSE=1 testBabysitter"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/antoni/Desktop/projects/OOP_babysitter/Babysitter/cmake-build-debug/program/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/antoni/Desktop/projects/OOP_babysitter/Babysitter/cmake-build-debug/program/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/antoni/Desktop/projects/OOP_babysitter/Babysitter/cmake-build-debug/program/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="testBabysitter/fast">
+				<Option output="/home/antoni/Desktop/projects/OOP_babysitter/Babysitter/cmake-build-debug/bin/testBabysitter" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/antoni/Desktop/projects/OOP_babysitter/Babysitter/cmake-build-debug/program"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DQT_WIDGETS_LIB"/>
+					<Add option="-DQT_GUI_LIB"/>
+					<Add option="-DQT_CORE_LIB"/>
+					<Add option="-DQT_PRINTSUPPORT_LIB"/>
+					<Add directory="/home/antoni/Desktop/projects/OOP_babysitter/Babysitter/program/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/qt5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/qt5/QtWidgets"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/qt5/QtGui"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/qt5/QtCore"/>
+					<Add directory="/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/qt5/QtPrintSupport"/>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/antoni/Desktop/projects/OOP_babysitter/Babysitter/cmake-build-debug/program/Makefile&quot;  VERBOSE=1 testBabysitter/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/antoni/Desktop/projects/OOP_babysitter/Babysitter/cmake-build-debug/program/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/antoni/Desktop/projects/OOP_babysitter/Babysitter/cmake-build-debug/program/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/antoni/Desktop/projects/OOP_babysitter/Babysitter/cmake-build-debug/program/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/home/antoni/Desktop/projects/OOP_babysitter/Babysitter/library/include/Babysitter.h">
+			<Option target="testBabysitter"/>
+		</Unit>
+		<Unit filename="/home/antoni/Desktop/projects/OOP_babysitter/Babysitter/library/include/Childsitter.h">
+			<Option target="testBabysitter"/>
+		</Unit>
+		<Unit filename="/home/antoni/Desktop/projects/OOP_babysitter/Babysitter/library/include/Manager.h">
+			<Option target="testBabysitter"/>
+		</Unit>
+		<Unit filename="/home/antoni/Desktop/projects/OOP_babysitter/Babysitter/library/include/Order.h">
+			<Option target="testBabysitter"/>
+		</Unit>
+		<Unit filename="/home/antoni/Desktop/projects/OOP_babysitter/Babysitter/library/include/PartyOrganizer.h">
+			<Option target="testBabysitter"/>
+		</Unit>
+		<Unit filename="/home/antoni/Desktop/projects/OOP_babysitter/Babysitter/library/include/Sitter.h">
+			<Option target="testBabysitter"/>
+		</Unit>
+		<Unit filename="/home/antoni/Desktop/projects/OOP_babysitter/Babysitter/library/include/Tutor.h">
+			<Option target="testBabysitter"/>
+		</Unit>
+		<Unit filename="/home/antoni/Desktop/projects/OOP_babysitter/Babysitter/library/include/UI.h">
+			<Option target="testBabysitter"/>
+		</Unit>
+		<Unit filename="/home/antoni/Desktop/projects/OOP_babysitter/Babysitter/library/source/Babysitter.cpp">
+			<Option target="testBabysitter"/>
+		</Unit>
+		<Unit filename="/home/antoni/Desktop/projects/OOP_babysitter/Babysitter/library/source/Childsitter.cpp">
+			<Option target="testBabysitter"/>
+		</Unit>
+		<Unit filename="/home/antoni/Desktop/projects/OOP_babysitter/Babysitter/library/source/Manager.cpp">
+			<Option target="testBabysitter"/>
+		</Unit>
+		<Unit filename="/home/antoni/Desktop/projects/OOP_babysitter/Babysitter/library/source/Order.cpp">
+			<Option target="testBabysitter"/>
+		</Unit>
+		<Unit filename="/home/antoni/Desktop/projects/OOP_babysitter/Babysitter/library/source/PartyOrganizer.cpp">
+			<Option target="testBabysitter"/>
+		</Unit>
+		<Unit filename="/home/antoni/Desktop/projects/OOP_babysitter/Babysitter/library/source/Sitter.cpp">
+			<Option target="testBabysitter"/>
+		</Unit>
+		<Unit filename="/home/antoni/Desktop/projects/OOP_babysitter/Babysitter/library/source/Tutor.cpp">
+			<Option target="testBabysitter"/>
+		</Unit>
+		<Unit filename="/home/antoni/Desktop/projects/OOP_babysitter/Babysitter/library/source/UI.cpp">
+			<Option target="testBabysitter"/>
+		</Unit>
+		<Unit filename="/home/antoni/Desktop/projects/OOP_babysitter/Babysitter/library/test/master.cpp">
+			<Option target="testBabysitter"/>
+		</Unit>
+		<Unit filename="/home/antoni/Desktop/projects/OOP_babysitter/Babysitter/library/test/testManager.cpp">
+			<Option target="testBabysitter"/>
+		</Unit>
+		<Unit filename="/home/antoni/Desktop/projects/OOP_babysitter/Babysitter/program/main.cpp">
+			<Option target="testBabysitter"/>
+		</Unit>
+		<Unit filename="/home/antoni/Desktop/projects/OOP_babysitter/Babysitter/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="/home/antoni/Desktop/projects/OOP_babysitter/Babysitter/program/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\program\"/>
+		</Unit>
+		<Unit filename="/home/antoni/Desktop/projects/OOP_babysitter/Babysitter/../../../../../../usr/lib/x86_64-linux-gnu/cmake/Qt5/Qt5Config.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt5\"/>
+		</Unit>
+		<Unit filename="/home/antoni/Desktop/projects/OOP_babysitter/Babysitter/../../../../../../usr/lib/x86_64-linux-gnu/cmake/Qt5/Qt5ConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt5\"/>
+		</Unit>
+		<Unit filename="/home/antoni/Desktop/projects/OOP_babysitter/Babysitter/../../../../../../usr/lib/x86_64-linux-gnu/cmake/Qt5/Qt5ModuleLocation.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt5\"/>
+		</Unit>
+		<Unit filename="/home/antoni/Desktop/projects/OOP_babysitter/Babysitter/../../../../../../usr/lib/x86_64-linux-gnu/cmake/Qt5Core/Qt5CoreConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt5Core\"/>
+		</Unit>
+		<Unit filename="/home/antoni/Desktop/projects/OOP_babysitter/Babysitter/../../../../../../usr/lib/x86_64-linux-gnu/cmake/Qt5Core/Qt5CoreConfigExtras.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt5Core\"/>
+		</Unit>
+		<Unit filename="/home/antoni/Desktop/projects/OOP_babysitter/Babysitter/../../../../../../usr/lib/x86_64-linux-gnu/cmake/Qt5Core/Qt5CoreConfigExtrasMkspecDir.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt5Core\"/>
+		</Unit>
+		<Unit filename="/home/antoni/Desktop/projects/OOP_babysitter/Babysitter/../../../../../../usr/lib/x86_64-linux-gnu/cmake/Qt5Core/Qt5CoreConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt5Core\"/>
+		</Unit>
+		<Unit filename="/home/antoni/Desktop/projects/OOP_babysitter/Babysitter/../../../../../../usr/lib/x86_64-linux-gnu/cmake/Qt5Core/Qt5CoreMacros.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt5Core\"/>
+		</Unit>
+		<Unit filename="/home/antoni/Desktop/projects/OOP_babysitter/Babysitter/../../../../../../usr/lib/x86_64-linux-gnu/cmake/Qt5PrintSupport/Qt5PrintSupportConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt5PrintSupport\"/>
+		</Unit>
+		<Unit filename="/home/antoni/Desktop/projects/OOP_babysitter/Babysitter/../../../../../../usr/lib/x86_64-linux-gnu/cmake/Qt5PrintSupport/Qt5PrintSupportConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt5PrintSupport\"/>
+		</Unit>
+		<Unit filename="/home/antoni/Desktop/projects/OOP_babysitter/Babysitter/../../../../../../usr/lib/x86_64-linux-gnu/cmake/Qt5Widgets/Qt5WidgetsConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt5Widgets\"/>
+		</Unit>
+		<Unit filename="/home/antoni/Desktop/projects/OOP_babysitter/Babysitter/../../../../../../usr/lib/x86_64-linux-gnu/cmake/Qt5Widgets/Qt5WidgetsConfigExtras.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt5Widgets\"/>
+		</Unit>
+		<Unit filename="/home/antoni/Desktop/projects/OOP_babysitter/Babysitter/../../../../../../usr/lib/x86_64-linux-gnu/cmake/Qt5Widgets/Qt5WidgetsConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt5Widgets\"/>
+		</Unit>
+		<Unit filename="/home/antoni/Desktop/projects/OOP_babysitter/Babysitter/../../../../../../usr/lib/x86_64-linux-gnu/cmake/Qt5Widgets/Qt5WidgetsMacros.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt5Widgets\"/>
+		</Unit>
+		<Unit filename="/home/antoni/Desktop/projects/OOP_babysitter/Babysitter/../../../../../../usr/lib/x86_64-linux-gnu/cmake/Qt5Gui/Qt5GuiConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="/home/antoni/Desktop/projects/OOP_babysitter/Babysitter/../../../../../../usr/lib/x86_64-linux-gnu/cmake/Qt5Gui/Qt5GuiConfigExtras.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="/home/antoni/Desktop/projects/OOP_babysitter/Babysitter/../../../../../../usr/lib/x86_64-linux-gnu/cmake/Qt5Gui/Qt5GuiConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt5Gui\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

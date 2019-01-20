@@ -1,0 +1,57 @@
+[
+{
+  "directory": "/home/antoni/Desktop/projects/OOP_babysitter/Babysitter/cmake-build-debug/program",
+  "command": "/usr/bin/g++  -DQT_CORE_LIB -DQT_GUI_LIB -DQT_PRINTSUPPORT_LIB -DQT_WIDGETS_LIB -I/home/antoni/Desktop/projects/OOP_babysitter/Babysitter/program/include -isystem /usr/include/x86_64-linux-gnu/qt5 -isystem /usr/include/x86_64-linux-gnu/qt5/QtWidgets -isystem /usr/include/x86_64-linux-gnu/qt5/QtGui -isystem /usr/include/x86_64-linux-gnu/qt5/QtCore -isystem /usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++ -isystem /usr/include/x86_64-linux-gnu/qt5/QtPrintSupport  -g   -fPIC -std=gnu++11 -o CMakeFiles/Babysitter.dir/__/library/source/Babysitter.cpp.o -c /home/antoni/Desktop/projects/OOP_babysitter/Babysitter/library/source/Babysitter.cpp",
+  "file": "/home/antoni/Desktop/projects/OOP_babysitter/Babysitter/library/source/Babysitter.cpp"
+},
+{
+  "directory": "/home/antoni/Desktop/projects/OOP_babysitter/Babysitter/cmake-build-debug/program",
+  "command": "/usr/bin/g++  -DQT_CORE_LIB -DQT_GUI_LIB -DQT_PRINTSUPPORT_LIB -DQT_WIDGETS_LIB -I/home/antoni/Desktop/projects/OOP_babysitter/Babysitter/program/include -isystem /usr/include/x86_64-linux-gnu/qt5 -isystem /usr/include/x86_64-linux-gnu/qt5/QtWidgets -isystem /usr/include/x86_64-linux-gnu/qt5/QtGui -isystem /usr/include/x86_64-linux-gnu/qt5/QtCore -isystem /usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++ -isystem /usr/include/x86_64-linux-gnu/qt5/QtPrintSupport  -g   -fPIC -std=gnu++11 -o CMakeFiles/Babysitter.dir/__/library/source/Childsitter.cpp.o -c /home/antoni/Desktop/projects/OOP_babysitter/Babysitter/library/source/Childsitter.cpp",
+  "file": "/home/antoni/Desktop/projects/OOP_babysitter/Babysitter/library/source/Childsitter.cpp"
+},
+{
+  "directory": "/home/antoni/Desktop/projects/OOP_babysitter/Babysitter/cmake-build-debug/program",
+  "command": "/usr/bin/g++  -DQT_CORE_LIB -DQT_GUI_LIB -DQT_PRINTSUPPORT_LIB -DQT_WIDGETS_LIB -I/home/antoni/Desktop/projects/OOP_babysitter/Babysitter/program/include -isystem /usr/include/x86_64-linux-gnu/qt5 -isystem /usr/include/x86_64-linux-gnu/qt5/QtWidgets -isystem /usr/include/x86_64-linux-gnu/qt5/QtGui -isystem /usr/include/x86_64-linux-gnu/qt5/QtCore -isystem /usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++ -isystem /usr/include/x86_64-linux-gnu/qt5/QtPrintSupport  -g   -fPIC -std=gnu++11 -o CMakeFiles/Babysitter.dir/__/library/source/Manager.cpp.o -c /home/antoni/Desktop/projects/OOP_babysitter/Babysitter/library/source/Manager.cpp",
+  "file": "/home/antoni/Desktop/projects/OOP_babysitter/Babysitter/library/source/Manager.cpp"
+},
+{
+  "directory": "/home/antoni/Desktop/projects/OOP_babysitter/Babysitter/cmake-build-debug/program",
+  "command": "/usr/bin/g++  -DQT_CORE_LIB -DQT_GUI_LIB -DQT_PRINTSUPPORT_LIB -DQT_WIDGETS_LIB -I/home/antoni/Desktop/projects/OOP_babysitter/Babysitter/program/include -isystem /usr/include/x86_64-linux-gnu/qt5 -isystem /usr/include/x86_64-linux-gnu/qt5/QtWidgets -isystem /usr/include/x86_64-linux-gnu/qt5/QtGui -isystem /usr/include/x86_64-linux-gnu/qt5/QtCore -isystem /usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++ -isystem /usr/include/x86_64-linux-gnu/qt5/QtPrintSupport  -g   -fPIC -std=gnu++11 -o CMakeFiles/Babysitter.dir/__/library/source/Order.cpp.o -c /home/antoni/Desktop/projects/OOP_babysitter/Babysitter/library/source/Order.cpp",
+  "file": "/home/antoni/Desktop/projects/OOP_babysitter/Babysitter/library/source/Order.cpp"
+},
+{
+  "directory": "/home/antoni/Desktop/projects/OOP_babysitter/Babysitter/cmake-build-debug/program",
+  "command": "/usr/bin/g++  -DQT_CORE_LIB -DQT_GUI_LIB -DQT_PRINTSUPPORT_LIB -DQT_WIDGETS_LIB -I/home/antoni/Desktop/projects/OOP_babysitter/Babysitter/program/include -isystem /usr/include/x86_64-linux-gnu/qt5 -isystem /usr/include/x86_64-linux-gnu/qt5/QtWidgets -isystem /usr/include/x86_64-linux-gnu/qt5/QtGui -isystem /usr/include/x86_64-linux-gnu/qt5/QtCore -isystem /usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++ -isystem /usr/include/x86_64-linux-gnu/qt5/QtPrintSupport  -g   -fPIC -std=gnu++11 -o CMakeFiles/Babysitter.dir/__/library/source/PartyOrganizer.cpp.o -c /home/antoni/Desktop/projects/OOP_babysitter/Babysitter/library/source/PartyOrganizer.cpp",
+  "file": "/home/antoni/Desktop/projects/OOP_babysitter/Babysitter/library/source/PartyOrganizer.cpp"
+},
+{
+  "directory": "/home/antoni/Desktop/projects/OOP_babysitter/Babysitter/cmake-build-debug/program",
+  "command": "/usr/bin/g++  -DQT_CORE_LIB -DQT_GUI_LIB -DQT_PRINTSUPPORT_LIB -DQT_WIDGETS_LIB -I/home/antoni/Desktop/projects/OOP_babysitter/Babysitter/program/include -isystem /usr/include/x86_64-linux-gnu/qt5 -isystem /usr/include/x86_64-linux-gnu/qt5/QtWidgets -isystem /usr/include/x86_64-linux-gnu/qt5/QtGui -isystem /usr/include/x86_64-linux-gnu/qt5/QtCore -isystem /usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++ -isystem /usr/include/x86_64-linux-gnu/qt5/QtPrintSupport  -g   -fPIC -std=gnu++11 -o CMakeFiles/Babysitter.dir/__/library/source/Sitter.cpp.o -c /home/antoni/Desktop/projects/OOP_babysitter/Babysitter/library/source/Sitter.cpp",
+  "file": "/home/antoni/Desktop/projects/OOP_babysitter/Babysitter/library/source/Sitter.cpp"
+},
+{
+  "directory": "/home/antoni/Desktop/projects/OOP_babysitter/Babysitter/cmake-build-debug/program",
+  "command": "/usr/bin/g++  -DQT_CORE_LIB -DQT_GUI_LIB -DQT_PRINTSUPPORT_LIB -DQT_WIDGETS_LIB -I/home/antoni/Desktop/projects/OOP_babysitter/Babysitter/program/include -isystem /usr/include/x86_64-linux-gnu/qt5 -isystem /usr/include/x86_64-linux-gnu/qt5/QtWidgets -isystem /usr/include/x86_64-linux-gnu/qt5/QtGui -isystem /usr/include/x86_64-linux-gnu/qt5/QtCore -isystem /usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++ -isystem /usr/include/x86_64-linux-gnu/qt5/QtPrintSupport  -g   -fPIC -std=gnu++11 -o CMakeFiles/Babysitter.dir/__/library/source/Tutor.cpp.o -c /home/antoni/Desktop/projects/OOP_babysitter/Babysitter/library/source/Tutor.cpp",
+  "file": "/home/antoni/Desktop/projects/OOP_babysitter/Babysitter/library/source/Tutor.cpp"
+},
+{
+  "directory": "/home/antoni/Desktop/projects/OOP_babysitter/Babysitter/cmake-build-debug/program",
+  "command": "/usr/bin/g++  -DQT_CORE_LIB -DQT_GUI_LIB -DQT_PRINTSUPPORT_LIB -DQT_WIDGETS_LIB -I/home/antoni/Desktop/projects/OOP_babysitter/Babysitter/program/include -isystem /usr/include/x86_64-linux-gnu/qt5 -isystem /usr/include/x86_64-linux-gnu/qt5/QtWidgets -isystem /usr/include/x86_64-linux-gnu/qt5/QtGui -isystem /usr/include/x86_64-linux-gnu/qt5/QtCore -isystem /usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++ -isystem /usr/include/x86_64-linux-gnu/qt5/QtPrintSupport  -g   -fPIC -std=gnu++11 -o CMakeFiles/Babysitter.dir/__/library/source/UI.cpp.o -c /home/antoni/Desktop/projects/OOP_babysitter/Babysitter/library/source/UI.cpp",
+  "file": "/home/antoni/Desktop/projects/OOP_babysitter/Babysitter/library/source/UI.cpp"
+},
+{
+  "directory": "/home/antoni/Desktop/projects/OOP_babysitter/Babysitter/cmake-build-debug/program",
+  "command": "/usr/bin/g++  -DQT_CORE_LIB -DQT_GUI_LIB -DQT_PRINTSUPPORT_LIB -DQT_WIDGETS_LIB -I/home/antoni/Desktop/projects/OOP_babysitter/Babysitter/program/include -isystem /usr/include/x86_64-linux-gnu/qt5 -isystem /usr/include/x86_64-linux-gnu/qt5/QtWidgets -isystem /usr/include/x86_64-linux-gnu/qt5/QtGui -isystem /usr/include/x86_64-linux-gnu/qt5/QtCore -isystem /usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++ -isystem /usr/include/x86_64-linux-gnu/qt5/QtPrintSupport  -g   -fPIC -std=gnu++11 -o CMakeFiles/Babysitter.dir/main.cpp.o -c /home/antoni/Desktop/projects/OOP_babysitter/Babysitter/program/main.cpp",
+  "file": "/home/antoni/Desktop/projects/OOP_babysitter/Babysitter/program/main.cpp"
+},
+{
+  "directory": "/home/antoni/Desktop/projects/OOP_babysitter/Babysitter/cmake-build-debug/program",
+  "command": "/usr/bin/g++  -DQT_CORE_LIB -DQT_GUI_LIB -DQT_PRINTSUPPORT_LIB -DQT_WIDGETS_LIB -I/home/antoni/Desktop/projects/OOP_babysitter/Babysitter/program/include -isystem /usr/include/x86_64-linux-gnu/qt5 -isystem /usr/include/x86_64-linux-gnu/qt5/QtWidgets -isystem /usr/include/x86_64-linux-gnu/qt5/QtGui -isystem /usr/include/x86_64-linux-gnu/qt5/QtCore -isystem /usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++ -isystem /usr/include/x86_64-linux-gnu/qt5/QtPrintSupport  -g   -fPIC -std=gnu++11 -o CMakeFiles/Babysitter.dir/__/library/test/master.cpp.o -c /home/antoni/Desktop/projects/OOP_babysitter/Babysitter/library/test/master.cpp",
+  "file": "/home/antoni/Desktop/projects/OOP_babysitter/Babysitter/library/test/master.cpp"
+},
+{
+  "directory": "/home/antoni/Desktop/projects/OOP_babysitter/Babysitter/cmake-build-debug/program",
+  "command": "/usr/bin/g++  -DQT_CORE_LIB -DQT_GUI_LIB -DQT_PRINTSUPPORT_LIB -DQT_WIDGETS_LIB -I/home/antoni/Desktop/projects/OOP_babysitter/Babysitter/program/include -isystem /usr/include/x86_64-linux-gnu/qt5 -isystem /usr/include/x86_64-linux-gnu/qt5/QtWidgets -isystem /usr/include/x86_64-linux-gnu/qt5/QtGui -isystem /usr/include/x86_64-linux-gnu/qt5/QtCore -isystem /usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++ -isystem /usr/include/x86_64-linux-gnu/qt5/QtPrintSupport  -g   -fPIC -std=gnu++11 -o CMakeFiles/Babysitter.dir/__/library/test/testManager.cpp.o -c /home/antoni/Desktop/projects/OOP_babysitter/Babysitter/library/test/testManager.cpp",
+  "file": "/home/antoni/Desktop/projects/OOP_babysitter/Babysitter/library/test/testManager.cpp"
+}
+]

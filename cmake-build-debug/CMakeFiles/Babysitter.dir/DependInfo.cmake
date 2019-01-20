@@ -4,16 +4,16 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/jedrek/Desktop/Babysitter/cmake-build-debug/Babysitter_autogen/mocs_compilation.cpp" "/home/jedrek/Desktop/Babysitter/cmake-build-debug/CMakeFiles/Babysitter.dir/Babysitter_autogen/mocs_compilation.cpp.o"
-  "/home/jedrek/Desktop/Babysitter/main.cpp" "/home/jedrek/Desktop/Babysitter/cmake-build-debug/CMakeFiles/Babysitter.dir/main.cpp.o"
-  "/home/jedrek/Desktop/Babysitter/source/Babysitter.cpp" "/home/jedrek/Desktop/Babysitter/cmake-build-debug/CMakeFiles/Babysitter.dir/source/Babysitter.cpp.o"
-  "/home/jedrek/Desktop/Babysitter/source/Childsitter.cpp" "/home/jedrek/Desktop/Babysitter/cmake-build-debug/CMakeFiles/Babysitter.dir/source/Childsitter.cpp.o"
-  "/home/jedrek/Desktop/Babysitter/source/Manager.cpp" "/home/jedrek/Desktop/Babysitter/cmake-build-debug/CMakeFiles/Babysitter.dir/source/Manager.cpp.o"
-  "/home/jedrek/Desktop/Babysitter/source/Order.cpp" "/home/jedrek/Desktop/Babysitter/cmake-build-debug/CMakeFiles/Babysitter.dir/source/Order.cpp.o"
-  "/home/jedrek/Desktop/Babysitter/source/PartyOrganizer.cpp" "/home/jedrek/Desktop/Babysitter/cmake-build-debug/CMakeFiles/Babysitter.dir/source/PartyOrganizer.cpp.o"
-  "/home/jedrek/Desktop/Babysitter/source/Sitter.cpp" "/home/jedrek/Desktop/Babysitter/cmake-build-debug/CMakeFiles/Babysitter.dir/source/Sitter.cpp.o"
-  "/home/jedrek/Desktop/Babysitter/source/Tutor.cpp" "/home/jedrek/Desktop/Babysitter/cmake-build-debug/CMakeFiles/Babysitter.dir/source/Tutor.cpp.o"
-  "/home/jedrek/Desktop/Babysitter/source/UI.cpp" "/home/jedrek/Desktop/Babysitter/cmake-build-debug/CMakeFiles/Babysitter.dir/source/UI.cpp.o"
+  "/home/antoni/Desktop/projects/OOP_babysitter/Babysitter/cmake-build-debug/Babysitter_autogen/mocs_compilation.cpp" "/home/antoni/Desktop/projects/OOP_babysitter/Babysitter/cmake-build-debug/CMakeFiles/Babysitter.dir/Babysitter_autogen/mocs_compilation.cpp.o"
+  "/home/antoni/Desktop/projects/OOP_babysitter/Babysitter/library/source/Babysitter.cpp" "/home/antoni/Desktop/projects/OOP_babysitter/Babysitter/cmake-build-debug/CMakeFiles/Babysitter.dir/library/source/Babysitter.cpp.o"
+  "/home/antoni/Desktop/projects/OOP_babysitter/Babysitter/library/source/Childsitter.cpp" "/home/antoni/Desktop/projects/OOP_babysitter/Babysitter/cmake-build-debug/CMakeFiles/Babysitter.dir/library/source/Childsitter.cpp.o"
+  "/home/antoni/Desktop/projects/OOP_babysitter/Babysitter/library/source/Manager.cpp" "/home/antoni/Desktop/projects/OOP_babysitter/Babysitter/cmake-build-debug/CMakeFiles/Babysitter.dir/library/source/Manager.cpp.o"
+  "/home/antoni/Desktop/projects/OOP_babysitter/Babysitter/library/source/Order.cpp" "/home/antoni/Desktop/projects/OOP_babysitter/Babysitter/cmake-build-debug/CMakeFiles/Babysitter.dir/library/source/Order.cpp.o"
+  "/home/antoni/Desktop/projects/OOP_babysitter/Babysitter/library/source/PartyOrganizer.cpp" "/home/antoni/Desktop/projects/OOP_babysitter/Babysitter/cmake-build-debug/CMakeFiles/Babysitter.dir/library/source/PartyOrganizer.cpp.o"
+  "/home/antoni/Desktop/projects/OOP_babysitter/Babysitter/library/source/Sitter.cpp" "/home/antoni/Desktop/projects/OOP_babysitter/Babysitter/cmake-build-debug/CMakeFiles/Babysitter.dir/library/source/Sitter.cpp.o"
+  "/home/antoni/Desktop/projects/OOP_babysitter/Babysitter/library/source/Tutor.cpp" "/home/antoni/Desktop/projects/OOP_babysitter/Babysitter/cmake-build-debug/CMakeFiles/Babysitter.dir/library/source/Tutor.cpp.o"
+  "/home/antoni/Desktop/projects/OOP_babysitter/Babysitter/library/source/UI.cpp" "/home/antoni/Desktop/projects/OOP_babysitter/Babysitter/cmake-build-debug/CMakeFiles/Babysitter.dir/library/source/UI.cpp.o"
+  "/home/antoni/Desktop/projects/OOP_babysitter/Babysitter/program/main.cpp" "/home/antoni/Desktop/projects/OOP_babysitter/Babysitter/cmake-build-debug/CMakeFiles/Babysitter.dir/program/main.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
@@ -27,7 +27,6 @@ set(CMAKE_TARGET_DEFINITIONS_CXX
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "Babysitter_autogen/include"
-  "../library"
   "/usr/include/x86_64-linux-gnu/qt5"
   "/usr/include/x86_64-linux-gnu/qt5/QtWidgets"
   "/usr/include/x86_64-linux-gnu/qt5/QtGui"

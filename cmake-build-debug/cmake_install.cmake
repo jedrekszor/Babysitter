@@ -1,4 +1,4 @@
-# Install script for directory: /home/jedrek/Desktop/Babysitter
+# Install script for directory: /home/antoni/Desktop/projects/OOP_babysitter/Babysitter
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -45,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/jedrek/Desktop/Babysitter/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/antoni/Desktop/projects/OOP_babysitter/Babysitter/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

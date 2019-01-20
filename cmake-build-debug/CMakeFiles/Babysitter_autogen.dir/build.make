@@ -43,10 +43,10 @@ RM = /snap/clion/58/bin/cmake/linux/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/jedrek/Desktop/Babysitter
+CMAKE_SOURCE_DIR = /home/antoni/Desktop/projects/OOP_babysitter/Babysitter
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/jedrek/Desktop/Babysitter/cmake-build-debug
+CMAKE_BINARY_DIR = /home/antoni/Desktop/projects/OOP_babysitter/Babysitter/cmake-build-debug
 
 # Utility rule file for Babysitter_autogen.
 
@@ -54,8 +54,8 @@ CMAKE_BINARY_DIR = /home/jedrek/Desktop/Babysitter/cmake-build-debug
 include CMakeFiles/Babysitter_autogen.dir/progress.make
 
 CMakeFiles/Babysitter_autogen:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/jedrek/Desktop/Babysitter/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Automatic MOC for target Babysitter"
-	/snap/clion/58/bin/cmake/linux/bin/cmake -E cmake_autogen /home/jedrek/Desktop/Babysitter/cmake-build-debug/CMakeFiles/Babysitter_autogen.dir/AutogenInfo.cmake Debug
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/antoni/Desktop/projects/OOP_babysitter/Babysitter/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Automatic MOC for target Babysitter"
+	/snap/clion/58/bin/cmake/linux/bin/cmake -E cmake_autogen /home/antoni/Desktop/projects/OOP_babysitter/Babysitter/cmake-build-debug/CMakeFiles/Babysitter_autogen.dir/AutogenInfo.cmake Debug
 
 Babysitter_autogen: CMakeFiles/Babysitter_autogen
 Babysitter_autogen: CMakeFiles/Babysitter_autogen.dir/build.make
@@ -72,6 +72,6 @@ CMakeFiles/Babysitter_autogen.dir/clean:
 .PHONY : CMakeFiles/Babysitter_autogen.dir/clean
 
 CMakeFiles/Babysitter_autogen.dir/depend:
-	cd /home/jedrek/Desktop/Babysitter/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/jedrek/Desktop/Babysitter /home/jedrek/Desktop/Babysitter /home/jedrek/Desktop/Babysitter/cmake-build-debug /home/jedrek/Desktop/Babysitter/cmake-build-debug /home/jedrek/Desktop/Babysitter/cmake-build-debug/CMakeFiles/Babysitter_autogen.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/antoni/Desktop/projects/OOP_babysitter/Babysitter/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/antoni/Desktop/projects/OOP_babysitter/Babysitter /home/antoni/Desktop/projects/OOP_babysitter/Babysitter /home/antoni/Desktop/projects/OOP_babysitter/Babysitter/cmake-build-debug /home/antoni/Desktop/projects/OOP_babysitter/Babysitter/cmake-build-debug /home/antoni/Desktop/projects/OOP_babysitter/Babysitter/cmake-build-debug/CMakeFiles/Babysitter_autogen.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/Babysitter_autogen.dir/depend
 

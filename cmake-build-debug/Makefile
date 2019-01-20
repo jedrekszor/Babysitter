@@ -48,10 +48,10 @@ RM = /snap/clion/58/bin/cmake/linux/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/jedrek/Desktop/Babysitter
+CMAKE_SOURCE_DIR = /home/antoni/Desktop/projects/OOP_babysitter/Babysitter
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/jedrek/Desktop/Babysitter/cmake-build-debug
+CMAKE_BINARY_DIR = /home/antoni/Desktop/projects/OOP_babysitter/Babysitter/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -78,11 +78,22 @@ edit_cache/fast: edit_cache
 
 .PHONY : edit_cache/fast
 
+# Special rule for the target test
+test:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running tests..."
+	/snap/clion/58/bin/cmake/linux/bin/ctest --force-new-ctest-process $(ARGS)
+.PHONY : test
+
+# Special rule for the target test
+test/fast: test
+
+.PHONY : test/fast
+
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/jedrek/Desktop/Babysitter/cmake-build-debug/CMakeFiles /home/jedrek/Desktop/Babysitter/cmake-build-debug/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/antoni/Desktop/projects/OOP_babysitter/Babysitter/cmake-build-debug/CMakeFiles /home/antoni/Desktop/projects/OOP_babysitter/Babysitter/cmake-build-debug/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/jedrek/Desktop/Babysitter/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/antoni/Desktop/projects/OOP_babysitter/Babysitter/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -124,6 +135,19 @@ Babysitter/fast:
 .PHONY : Babysitter/fast
 
 #=============================================================================
+# Target rules for targets named TestBabysitter
+
+# Build rule for target.
+TestBabysitter: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 TestBabysitter
+.PHONY : TestBabysitter
+
+# fast build rule for target.
+TestBabysitter/fast:
+	$(MAKE) -f CMakeFiles/TestBabysitter.dir/build.make CMakeFiles/TestBabysitter.dir/build
+.PHONY : TestBabysitter/fast
+
+#=============================================================================
 # Target rules for targets named Babysitter_autogen
 
 # Build rule for target.
@@ -135,6 +159,19 @@ Babysitter_autogen: cmake_check_build_system
 Babysitter_autogen/fast:
 	$(MAKE) -f CMakeFiles/Babysitter_autogen.dir/build.make CMakeFiles/Babysitter_autogen.dir/build
 .PHONY : Babysitter_autogen/fast
+
+#=============================================================================
+# Target rules for targets named TestBabysitter_autogen
+
+# Build rule for target.
+TestBabysitter_autogen: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 TestBabysitter_autogen
+.PHONY : TestBabysitter_autogen
+
+# fast build rule for target.
+TestBabysitter_autogen/fast:
+	$(MAKE) -f CMakeFiles/TestBabysitter_autogen.dir/build.make CMakeFiles/TestBabysitter_autogen.dir/build
+.PHONY : TestBabysitter_autogen/fast
 
 Babysitter_autogen/mocs_compilation.o: Babysitter_autogen/mocs_compilation.cpp.o
 
@@ -163,248 +200,353 @@ Babysitter_autogen/mocs_compilation.cpp.s:
 	$(MAKE) -f CMakeFiles/Babysitter.dir/build.make CMakeFiles/Babysitter.dir/Babysitter_autogen/mocs_compilation.cpp.s
 .PHONY : Babysitter_autogen/mocs_compilation.cpp.s
 
-main.o: main.cpp.o
+TestBabysitter_autogen/mocs_compilation.o: TestBabysitter_autogen/mocs_compilation.cpp.o
 
-.PHONY : main.o
-
-# target to build an object file
-main.cpp.o:
-	$(MAKE) -f CMakeFiles/Babysitter.dir/build.make CMakeFiles/Babysitter.dir/main.cpp.o
-.PHONY : main.cpp.o
-
-main.i: main.cpp.i
-
-.PHONY : main.i
-
-# target to preprocess a source file
-main.cpp.i:
-	$(MAKE) -f CMakeFiles/Babysitter.dir/build.make CMakeFiles/Babysitter.dir/main.cpp.i
-.PHONY : main.cpp.i
-
-main.s: main.cpp.s
-
-.PHONY : main.s
-
-# target to generate assembly for a file
-main.cpp.s:
-	$(MAKE) -f CMakeFiles/Babysitter.dir/build.make CMakeFiles/Babysitter.dir/main.cpp.s
-.PHONY : main.cpp.s
-
-source/Babysitter.o: source/Babysitter.cpp.o
-
-.PHONY : source/Babysitter.o
+.PHONY : TestBabysitter_autogen/mocs_compilation.o
 
 # target to build an object file
-source/Babysitter.cpp.o:
-	$(MAKE) -f CMakeFiles/Babysitter.dir/build.make CMakeFiles/Babysitter.dir/source/Babysitter.cpp.o
-.PHONY : source/Babysitter.cpp.o
+TestBabysitter_autogen/mocs_compilation.cpp.o:
+	$(MAKE) -f CMakeFiles/TestBabysitter.dir/build.make CMakeFiles/TestBabysitter.dir/TestBabysitter_autogen/mocs_compilation.cpp.o
+.PHONY : TestBabysitter_autogen/mocs_compilation.cpp.o
 
-source/Babysitter.i: source/Babysitter.cpp.i
+TestBabysitter_autogen/mocs_compilation.i: TestBabysitter_autogen/mocs_compilation.cpp.i
 
-.PHONY : source/Babysitter.i
+.PHONY : TestBabysitter_autogen/mocs_compilation.i
 
 # target to preprocess a source file
-source/Babysitter.cpp.i:
-	$(MAKE) -f CMakeFiles/Babysitter.dir/build.make CMakeFiles/Babysitter.dir/source/Babysitter.cpp.i
-.PHONY : source/Babysitter.cpp.i
+TestBabysitter_autogen/mocs_compilation.cpp.i:
+	$(MAKE) -f CMakeFiles/TestBabysitter.dir/build.make CMakeFiles/TestBabysitter.dir/TestBabysitter_autogen/mocs_compilation.cpp.i
+.PHONY : TestBabysitter_autogen/mocs_compilation.cpp.i
 
-source/Babysitter.s: source/Babysitter.cpp.s
+TestBabysitter_autogen/mocs_compilation.s: TestBabysitter_autogen/mocs_compilation.cpp.s
 
-.PHONY : source/Babysitter.s
+.PHONY : TestBabysitter_autogen/mocs_compilation.s
 
 # target to generate assembly for a file
-source/Babysitter.cpp.s:
-	$(MAKE) -f CMakeFiles/Babysitter.dir/build.make CMakeFiles/Babysitter.dir/source/Babysitter.cpp.s
-.PHONY : source/Babysitter.cpp.s
+TestBabysitter_autogen/mocs_compilation.cpp.s:
+	$(MAKE) -f CMakeFiles/TestBabysitter.dir/build.make CMakeFiles/TestBabysitter.dir/TestBabysitter_autogen/mocs_compilation.cpp.s
+.PHONY : TestBabysitter_autogen/mocs_compilation.cpp.s
 
-source/Childsitter.o: source/Childsitter.cpp.o
+library/source/Babysitter.o: library/source/Babysitter.cpp.o
 
-.PHONY : source/Childsitter.o
+.PHONY : library/source/Babysitter.o
 
 # target to build an object file
-source/Childsitter.cpp.o:
-	$(MAKE) -f CMakeFiles/Babysitter.dir/build.make CMakeFiles/Babysitter.dir/source/Childsitter.cpp.o
-.PHONY : source/Childsitter.cpp.o
+library/source/Babysitter.cpp.o:
+	$(MAKE) -f CMakeFiles/Babysitter.dir/build.make CMakeFiles/Babysitter.dir/library/source/Babysitter.cpp.o
+	$(MAKE) -f CMakeFiles/TestBabysitter.dir/build.make CMakeFiles/TestBabysitter.dir/library/source/Babysitter.cpp.o
+.PHONY : library/source/Babysitter.cpp.o
 
-source/Childsitter.i: source/Childsitter.cpp.i
+library/source/Babysitter.i: library/source/Babysitter.cpp.i
 
-.PHONY : source/Childsitter.i
+.PHONY : library/source/Babysitter.i
 
 # target to preprocess a source file
-source/Childsitter.cpp.i:
-	$(MAKE) -f CMakeFiles/Babysitter.dir/build.make CMakeFiles/Babysitter.dir/source/Childsitter.cpp.i
-.PHONY : source/Childsitter.cpp.i
+library/source/Babysitter.cpp.i:
+	$(MAKE) -f CMakeFiles/Babysitter.dir/build.make CMakeFiles/Babysitter.dir/library/source/Babysitter.cpp.i
+	$(MAKE) -f CMakeFiles/TestBabysitter.dir/build.make CMakeFiles/TestBabysitter.dir/library/source/Babysitter.cpp.i
+.PHONY : library/source/Babysitter.cpp.i
 
-source/Childsitter.s: source/Childsitter.cpp.s
+library/source/Babysitter.s: library/source/Babysitter.cpp.s
 
-.PHONY : source/Childsitter.s
+.PHONY : library/source/Babysitter.s
 
 # target to generate assembly for a file
-source/Childsitter.cpp.s:
-	$(MAKE) -f CMakeFiles/Babysitter.dir/build.make CMakeFiles/Babysitter.dir/source/Childsitter.cpp.s
-.PHONY : source/Childsitter.cpp.s
+library/source/Babysitter.cpp.s:
+	$(MAKE) -f CMakeFiles/Babysitter.dir/build.make CMakeFiles/Babysitter.dir/library/source/Babysitter.cpp.s
+	$(MAKE) -f CMakeFiles/TestBabysitter.dir/build.make CMakeFiles/TestBabysitter.dir/library/source/Babysitter.cpp.s
+.PHONY : library/source/Babysitter.cpp.s
 
-source/Manager.o: source/Manager.cpp.o
+library/source/Childsitter.o: library/source/Childsitter.cpp.o
 
-.PHONY : source/Manager.o
+.PHONY : library/source/Childsitter.o
 
 # target to build an object file
-source/Manager.cpp.o:
-	$(MAKE) -f CMakeFiles/Babysitter.dir/build.make CMakeFiles/Babysitter.dir/source/Manager.cpp.o
-.PHONY : source/Manager.cpp.o
+library/source/Childsitter.cpp.o:
+	$(MAKE) -f CMakeFiles/Babysitter.dir/build.make CMakeFiles/Babysitter.dir/library/source/Childsitter.cpp.o
+	$(MAKE) -f CMakeFiles/TestBabysitter.dir/build.make CMakeFiles/TestBabysitter.dir/library/source/Childsitter.cpp.o
+.PHONY : library/source/Childsitter.cpp.o
 
-source/Manager.i: source/Manager.cpp.i
+library/source/Childsitter.i: library/source/Childsitter.cpp.i
 
-.PHONY : source/Manager.i
+.PHONY : library/source/Childsitter.i
 
 # target to preprocess a source file
-source/Manager.cpp.i:
-	$(MAKE) -f CMakeFiles/Babysitter.dir/build.make CMakeFiles/Babysitter.dir/source/Manager.cpp.i
-.PHONY : source/Manager.cpp.i
+library/source/Childsitter.cpp.i:
+	$(MAKE) -f CMakeFiles/Babysitter.dir/build.make CMakeFiles/Babysitter.dir/library/source/Childsitter.cpp.i
+	$(MAKE) -f CMakeFiles/TestBabysitter.dir/build.make CMakeFiles/TestBabysitter.dir/library/source/Childsitter.cpp.i
+.PHONY : library/source/Childsitter.cpp.i
 
-source/Manager.s: source/Manager.cpp.s
+library/source/Childsitter.s: library/source/Childsitter.cpp.s
 
-.PHONY : source/Manager.s
+.PHONY : library/source/Childsitter.s
 
 # target to generate assembly for a file
-source/Manager.cpp.s:
-	$(MAKE) -f CMakeFiles/Babysitter.dir/build.make CMakeFiles/Babysitter.dir/source/Manager.cpp.s
-.PHONY : source/Manager.cpp.s
+library/source/Childsitter.cpp.s:
+	$(MAKE) -f CMakeFiles/Babysitter.dir/build.make CMakeFiles/Babysitter.dir/library/source/Childsitter.cpp.s
+	$(MAKE) -f CMakeFiles/TestBabysitter.dir/build.make CMakeFiles/TestBabysitter.dir/library/source/Childsitter.cpp.s
+.PHONY : library/source/Childsitter.cpp.s
 
-source/Order.o: source/Order.cpp.o
+library/source/Manager.o: library/source/Manager.cpp.o
 
-.PHONY : source/Order.o
+.PHONY : library/source/Manager.o
 
 # target to build an object file
-source/Order.cpp.o:
-	$(MAKE) -f CMakeFiles/Babysitter.dir/build.make CMakeFiles/Babysitter.dir/source/Order.cpp.o
-.PHONY : source/Order.cpp.o
+library/source/Manager.cpp.o:
+	$(MAKE) -f CMakeFiles/Babysitter.dir/build.make CMakeFiles/Babysitter.dir/library/source/Manager.cpp.o
+	$(MAKE) -f CMakeFiles/TestBabysitter.dir/build.make CMakeFiles/TestBabysitter.dir/library/source/Manager.cpp.o
+.PHONY : library/source/Manager.cpp.o
 
-source/Order.i: source/Order.cpp.i
+library/source/Manager.i: library/source/Manager.cpp.i
 
-.PHONY : source/Order.i
+.PHONY : library/source/Manager.i
 
 # target to preprocess a source file
-source/Order.cpp.i:
-	$(MAKE) -f CMakeFiles/Babysitter.dir/build.make CMakeFiles/Babysitter.dir/source/Order.cpp.i
-.PHONY : source/Order.cpp.i
+library/source/Manager.cpp.i:
+	$(MAKE) -f CMakeFiles/Babysitter.dir/build.make CMakeFiles/Babysitter.dir/library/source/Manager.cpp.i
+	$(MAKE) -f CMakeFiles/TestBabysitter.dir/build.make CMakeFiles/TestBabysitter.dir/library/source/Manager.cpp.i
+.PHONY : library/source/Manager.cpp.i
 
-source/Order.s: source/Order.cpp.s
+library/source/Manager.s: library/source/Manager.cpp.s
 
-.PHONY : source/Order.s
+.PHONY : library/source/Manager.s
 
 # target to generate assembly for a file
-source/Order.cpp.s:
-	$(MAKE) -f CMakeFiles/Babysitter.dir/build.make CMakeFiles/Babysitter.dir/source/Order.cpp.s
-.PHONY : source/Order.cpp.s
+library/source/Manager.cpp.s:
+	$(MAKE) -f CMakeFiles/Babysitter.dir/build.make CMakeFiles/Babysitter.dir/library/source/Manager.cpp.s
+	$(MAKE) -f CMakeFiles/TestBabysitter.dir/build.make CMakeFiles/TestBabysitter.dir/library/source/Manager.cpp.s
+.PHONY : library/source/Manager.cpp.s
 
-source/PartyOrganizer.o: source/PartyOrganizer.cpp.o
+library/source/Order.o: library/source/Order.cpp.o
 
-.PHONY : source/PartyOrganizer.o
+.PHONY : library/source/Order.o
 
 # target to build an object file
-source/PartyOrganizer.cpp.o:
-	$(MAKE) -f CMakeFiles/Babysitter.dir/build.make CMakeFiles/Babysitter.dir/source/PartyOrganizer.cpp.o
-.PHONY : source/PartyOrganizer.cpp.o
+library/source/Order.cpp.o:
+	$(MAKE) -f CMakeFiles/Babysitter.dir/build.make CMakeFiles/Babysitter.dir/library/source/Order.cpp.o
+	$(MAKE) -f CMakeFiles/TestBabysitter.dir/build.make CMakeFiles/TestBabysitter.dir/library/source/Order.cpp.o
+.PHONY : library/source/Order.cpp.o
 
-source/PartyOrganizer.i: source/PartyOrganizer.cpp.i
+library/source/Order.i: library/source/Order.cpp.i
 
-.PHONY : source/PartyOrganizer.i
+.PHONY : library/source/Order.i
 
 # target to preprocess a source file
-source/PartyOrganizer.cpp.i:
-	$(MAKE) -f CMakeFiles/Babysitter.dir/build.make CMakeFiles/Babysitter.dir/source/PartyOrganizer.cpp.i
-.PHONY : source/PartyOrganizer.cpp.i
+library/source/Order.cpp.i:
+	$(MAKE) -f CMakeFiles/Babysitter.dir/build.make CMakeFiles/Babysitter.dir/library/source/Order.cpp.i
+	$(MAKE) -f CMakeFiles/TestBabysitter.dir/build.make CMakeFiles/TestBabysitter.dir/library/source/Order.cpp.i
+.PHONY : library/source/Order.cpp.i
 
-source/PartyOrganizer.s: source/PartyOrganizer.cpp.s
+library/source/Order.s: library/source/Order.cpp.s
 
-.PHONY : source/PartyOrganizer.s
+.PHONY : library/source/Order.s
 
 # target to generate assembly for a file
-source/PartyOrganizer.cpp.s:
-	$(MAKE) -f CMakeFiles/Babysitter.dir/build.make CMakeFiles/Babysitter.dir/source/PartyOrganizer.cpp.s
-.PHONY : source/PartyOrganizer.cpp.s
+library/source/Order.cpp.s:
+	$(MAKE) -f CMakeFiles/Babysitter.dir/build.make CMakeFiles/Babysitter.dir/library/source/Order.cpp.s
+	$(MAKE) -f CMakeFiles/TestBabysitter.dir/build.make CMakeFiles/TestBabysitter.dir/library/source/Order.cpp.s
+.PHONY : library/source/Order.cpp.s
 
-source/Sitter.o: source/Sitter.cpp.o
+library/source/PartyOrganizer.o: library/source/PartyOrganizer.cpp.o
 
-.PHONY : source/Sitter.o
+.PHONY : library/source/PartyOrganizer.o
 
 # target to build an object file
-source/Sitter.cpp.o:
-	$(MAKE) -f CMakeFiles/Babysitter.dir/build.make CMakeFiles/Babysitter.dir/source/Sitter.cpp.o
-.PHONY : source/Sitter.cpp.o
+library/source/PartyOrganizer.cpp.o:
+	$(MAKE) -f CMakeFiles/Babysitter.dir/build.make CMakeFiles/Babysitter.dir/library/source/PartyOrganizer.cpp.o
+	$(MAKE) -f CMakeFiles/TestBabysitter.dir/build.make CMakeFiles/TestBabysitter.dir/library/source/PartyOrganizer.cpp.o
+.PHONY : library/source/PartyOrganizer.cpp.o
 
-source/Sitter.i: source/Sitter.cpp.i
+library/source/PartyOrganizer.i: library/source/PartyOrganizer.cpp.i
 
-.PHONY : source/Sitter.i
+.PHONY : library/source/PartyOrganizer.i
 
 # target to preprocess a source file
-source/Sitter.cpp.i:
-	$(MAKE) -f CMakeFiles/Babysitter.dir/build.make CMakeFiles/Babysitter.dir/source/Sitter.cpp.i
-.PHONY : source/Sitter.cpp.i
+library/source/PartyOrganizer.cpp.i:
+	$(MAKE) -f CMakeFiles/Babysitter.dir/build.make CMakeFiles/Babysitter.dir/library/source/PartyOrganizer.cpp.i
+	$(MAKE) -f CMakeFiles/TestBabysitter.dir/build.make CMakeFiles/TestBabysitter.dir/library/source/PartyOrganizer.cpp.i
+.PHONY : library/source/PartyOrganizer.cpp.i
 
-source/Sitter.s: source/Sitter.cpp.s
+library/source/PartyOrganizer.s: library/source/PartyOrganizer.cpp.s
 
-.PHONY : source/Sitter.s
+.PHONY : library/source/PartyOrganizer.s
 
 # target to generate assembly for a file
-source/Sitter.cpp.s:
-	$(MAKE) -f CMakeFiles/Babysitter.dir/build.make CMakeFiles/Babysitter.dir/source/Sitter.cpp.s
-.PHONY : source/Sitter.cpp.s
+library/source/PartyOrganizer.cpp.s:
+	$(MAKE) -f CMakeFiles/Babysitter.dir/build.make CMakeFiles/Babysitter.dir/library/source/PartyOrganizer.cpp.s
+	$(MAKE) -f CMakeFiles/TestBabysitter.dir/build.make CMakeFiles/TestBabysitter.dir/library/source/PartyOrganizer.cpp.s
+.PHONY : library/source/PartyOrganizer.cpp.s
 
-source/Tutor.o: source/Tutor.cpp.o
+library/source/Sitter.o: library/source/Sitter.cpp.o
 
-.PHONY : source/Tutor.o
+.PHONY : library/source/Sitter.o
 
 # target to build an object file
-source/Tutor.cpp.o:
-	$(MAKE) -f CMakeFiles/Babysitter.dir/build.make CMakeFiles/Babysitter.dir/source/Tutor.cpp.o
-.PHONY : source/Tutor.cpp.o
+library/source/Sitter.cpp.o:
+	$(MAKE) -f CMakeFiles/Babysitter.dir/build.make CMakeFiles/Babysitter.dir/library/source/Sitter.cpp.o
+	$(MAKE) -f CMakeFiles/TestBabysitter.dir/build.make CMakeFiles/TestBabysitter.dir/library/source/Sitter.cpp.o
+.PHONY : library/source/Sitter.cpp.o
 
-source/Tutor.i: source/Tutor.cpp.i
+library/source/Sitter.i: library/source/Sitter.cpp.i
 
-.PHONY : source/Tutor.i
+.PHONY : library/source/Sitter.i
 
 # target to preprocess a source file
-source/Tutor.cpp.i:
-	$(MAKE) -f CMakeFiles/Babysitter.dir/build.make CMakeFiles/Babysitter.dir/source/Tutor.cpp.i
-.PHONY : source/Tutor.cpp.i
+library/source/Sitter.cpp.i:
+	$(MAKE) -f CMakeFiles/Babysitter.dir/build.make CMakeFiles/Babysitter.dir/library/source/Sitter.cpp.i
+	$(MAKE) -f CMakeFiles/TestBabysitter.dir/build.make CMakeFiles/TestBabysitter.dir/library/source/Sitter.cpp.i
+.PHONY : library/source/Sitter.cpp.i
 
-source/Tutor.s: source/Tutor.cpp.s
+library/source/Sitter.s: library/source/Sitter.cpp.s
 
-.PHONY : source/Tutor.s
+.PHONY : library/source/Sitter.s
 
 # target to generate assembly for a file
-source/Tutor.cpp.s:
-	$(MAKE) -f CMakeFiles/Babysitter.dir/build.make CMakeFiles/Babysitter.dir/source/Tutor.cpp.s
-.PHONY : source/Tutor.cpp.s
+library/source/Sitter.cpp.s:
+	$(MAKE) -f CMakeFiles/Babysitter.dir/build.make CMakeFiles/Babysitter.dir/library/source/Sitter.cpp.s
+	$(MAKE) -f CMakeFiles/TestBabysitter.dir/build.make CMakeFiles/TestBabysitter.dir/library/source/Sitter.cpp.s
+.PHONY : library/source/Sitter.cpp.s
 
-source/UI.o: source/UI.cpp.o
+library/source/Tutor.o: library/source/Tutor.cpp.o
 
-.PHONY : source/UI.o
+.PHONY : library/source/Tutor.o
 
 # target to build an object file
-source/UI.cpp.o:
-	$(MAKE) -f CMakeFiles/Babysitter.dir/build.make CMakeFiles/Babysitter.dir/source/UI.cpp.o
-.PHONY : source/UI.cpp.o
+library/source/Tutor.cpp.o:
+	$(MAKE) -f CMakeFiles/Babysitter.dir/build.make CMakeFiles/Babysitter.dir/library/source/Tutor.cpp.o
+	$(MAKE) -f CMakeFiles/TestBabysitter.dir/build.make CMakeFiles/TestBabysitter.dir/library/source/Tutor.cpp.o
+.PHONY : library/source/Tutor.cpp.o
 
-source/UI.i: source/UI.cpp.i
+library/source/Tutor.i: library/source/Tutor.cpp.i
 
-.PHONY : source/UI.i
+.PHONY : library/source/Tutor.i
 
 # target to preprocess a source file
-source/UI.cpp.i:
-	$(MAKE) -f CMakeFiles/Babysitter.dir/build.make CMakeFiles/Babysitter.dir/source/UI.cpp.i
-.PHONY : source/UI.cpp.i
+library/source/Tutor.cpp.i:
+	$(MAKE) -f CMakeFiles/Babysitter.dir/build.make CMakeFiles/Babysitter.dir/library/source/Tutor.cpp.i
+	$(MAKE) -f CMakeFiles/TestBabysitter.dir/build.make CMakeFiles/TestBabysitter.dir/library/source/Tutor.cpp.i
+.PHONY : library/source/Tutor.cpp.i
 
-source/UI.s: source/UI.cpp.s
+library/source/Tutor.s: library/source/Tutor.cpp.s
 
-.PHONY : source/UI.s
+.PHONY : library/source/Tutor.s
 
 # target to generate assembly for a file
-source/UI.cpp.s:
-	$(MAKE) -f CMakeFiles/Babysitter.dir/build.make CMakeFiles/Babysitter.dir/source/UI.cpp.s
-.PHONY : source/UI.cpp.s
+library/source/Tutor.cpp.s:
+	$(MAKE) -f CMakeFiles/Babysitter.dir/build.make CMakeFiles/Babysitter.dir/library/source/Tutor.cpp.s
+	$(MAKE) -f CMakeFiles/TestBabysitter.dir/build.make CMakeFiles/TestBabysitter.dir/library/source/Tutor.cpp.s
+.PHONY : library/source/Tutor.cpp.s
+
+library/source/UI.o: library/source/UI.cpp.o
+
+.PHONY : library/source/UI.o
+
+# target to build an object file
+library/source/UI.cpp.o:
+	$(MAKE) -f CMakeFiles/Babysitter.dir/build.make CMakeFiles/Babysitter.dir/library/source/UI.cpp.o
+	$(MAKE) -f CMakeFiles/TestBabysitter.dir/build.make CMakeFiles/TestBabysitter.dir/library/source/UI.cpp.o
+.PHONY : library/source/UI.cpp.o
+
+library/source/UI.i: library/source/UI.cpp.i
+
+.PHONY : library/source/UI.i
+
+# target to preprocess a source file
+library/source/UI.cpp.i:
+	$(MAKE) -f CMakeFiles/Babysitter.dir/build.make CMakeFiles/Babysitter.dir/library/source/UI.cpp.i
+	$(MAKE) -f CMakeFiles/TestBabysitter.dir/build.make CMakeFiles/TestBabysitter.dir/library/source/UI.cpp.i
+.PHONY : library/source/UI.cpp.i
+
+library/source/UI.s: library/source/UI.cpp.s
+
+.PHONY : library/source/UI.s
+
+# target to generate assembly for a file
+library/source/UI.cpp.s:
+	$(MAKE) -f CMakeFiles/Babysitter.dir/build.make CMakeFiles/Babysitter.dir/library/source/UI.cpp.s
+	$(MAKE) -f CMakeFiles/TestBabysitter.dir/build.make CMakeFiles/TestBabysitter.dir/library/source/UI.cpp.s
+.PHONY : library/source/UI.cpp.s
+
+library/test/master.o: library/test/master.cpp.o
+
+.PHONY : library/test/master.o
+
+# target to build an object file
+library/test/master.cpp.o:
+	$(MAKE) -f CMakeFiles/TestBabysitter.dir/build.make CMakeFiles/TestBabysitter.dir/library/test/master.cpp.o
+.PHONY : library/test/master.cpp.o
+
+library/test/master.i: library/test/master.cpp.i
+
+.PHONY : library/test/master.i
+
+# target to preprocess a source file
+library/test/master.cpp.i:
+	$(MAKE) -f CMakeFiles/TestBabysitter.dir/build.make CMakeFiles/TestBabysitter.dir/library/test/master.cpp.i
+.PHONY : library/test/master.cpp.i
+
+library/test/master.s: library/test/master.cpp.s
+
+.PHONY : library/test/master.s
+
+# target to generate assembly for a file
+library/test/master.cpp.s:
+	$(MAKE) -f CMakeFiles/TestBabysitter.dir/build.make CMakeFiles/TestBabysitter.dir/library/test/master.cpp.s
+.PHONY : library/test/master.cpp.s
+
+library/test/testManager.o: library/test/testManager.cpp.o
+
+.PHONY : library/test/testManager.o
+
+# target to build an object file
+library/test/testManager.cpp.o:
+	$(MAKE) -f CMakeFiles/TestBabysitter.dir/build.make CMakeFiles/TestBabysitter.dir/library/test/testManager.cpp.o
+.PHONY : library/test/testManager.cpp.o
+
+library/test/testManager.i: library/test/testManager.cpp.i
+
+.PHONY : library/test/testManager.i
+
+# target to preprocess a source file
+library/test/testManager.cpp.i:
+	$(MAKE) -f CMakeFiles/TestBabysitter.dir/build.make CMakeFiles/TestBabysitter.dir/library/test/testManager.cpp.i
+.PHONY : library/test/testManager.cpp.i
+
+library/test/testManager.s: library/test/testManager.cpp.s
+
+.PHONY : library/test/testManager.s
+
+# target to generate assembly for a file
+library/test/testManager.cpp.s:
+	$(MAKE) -f CMakeFiles/TestBabysitter.dir/build.make CMakeFiles/TestBabysitter.dir/library/test/testManager.cpp.s
+.PHONY : library/test/testManager.cpp.s
+
+program/main.o: program/main.cpp.o
+
+.PHONY : program/main.o
+
+# target to build an object file
+program/main.cpp.o:
+	$(MAKE) -f CMakeFiles/Babysitter.dir/build.make CMakeFiles/Babysitter.dir/program/main.cpp.o
+.PHONY : program/main.cpp.o
+
+program/main.i: program/main.cpp.i
+
+.PHONY : program/main.i
+
+# target to preprocess a source file
+program/main.cpp.i:
+	$(MAKE) -f CMakeFiles/Babysitter.dir/build.make CMakeFiles/Babysitter.dir/program/main.cpp.i
+.PHONY : program/main.cpp.i
+
+program/main.s: program/main.cpp.s
+
+.PHONY : program/main.s
+
+# target to generate assembly for a file
+program/main.cpp.s:
+	$(MAKE) -f CMakeFiles/Babysitter.dir/build.make CMakeFiles/Babysitter.dir/program/main.cpp.s
+.PHONY : program/main.cpp.s
 
 # Help Target
 help:
@@ -413,39 +555,51 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... rebuild_cache"
-	@echo "... Babysitter"
 	@echo "... edit_cache"
+	@echo "... test"
+	@echo "... Babysitter"
+	@echo "... TestBabysitter"
 	@echo "... Babysitter_autogen"
+	@echo "... TestBabysitter_autogen"
 	@echo "... Babysitter_autogen/mocs_compilation.o"
 	@echo "... Babysitter_autogen/mocs_compilation.i"
 	@echo "... Babysitter_autogen/mocs_compilation.s"
-	@echo "... main.o"
-	@echo "... main.i"
-	@echo "... main.s"
-	@echo "... source/Babysitter.o"
-	@echo "... source/Babysitter.i"
-	@echo "... source/Babysitter.s"
-	@echo "... source/Childsitter.o"
-	@echo "... source/Childsitter.i"
-	@echo "... source/Childsitter.s"
-	@echo "... source/Manager.o"
-	@echo "... source/Manager.i"
-	@echo "... source/Manager.s"
-	@echo "... source/Order.o"
-	@echo "... source/Order.i"
-	@echo "... source/Order.s"
-	@echo "... source/PartyOrganizer.o"
-	@echo "... source/PartyOrganizer.i"
-	@echo "... source/PartyOrganizer.s"
-	@echo "... source/Sitter.o"
-	@echo "... source/Sitter.i"
-	@echo "... source/Sitter.s"
-	@echo "... source/Tutor.o"
-	@echo "... source/Tutor.i"
-	@echo "... source/Tutor.s"
-	@echo "... source/UI.o"
-	@echo "... source/UI.i"
-	@echo "... source/UI.s"
+	@echo "... TestBabysitter_autogen/mocs_compilation.o"
+	@echo "... TestBabysitter_autogen/mocs_compilation.i"
+	@echo "... TestBabysitter_autogen/mocs_compilation.s"
+	@echo "... library/source/Babysitter.o"
+	@echo "... library/source/Babysitter.i"
+	@echo "... library/source/Babysitter.s"
+	@echo "... library/source/Childsitter.o"
+	@echo "... library/source/Childsitter.i"
+	@echo "... library/source/Childsitter.s"
+	@echo "... library/source/Manager.o"
+	@echo "... library/source/Manager.i"
+	@echo "... library/source/Manager.s"
+	@echo "... library/source/Order.o"
+	@echo "... library/source/Order.i"
+	@echo "... library/source/Order.s"
+	@echo "... library/source/PartyOrganizer.o"
+	@echo "... library/source/PartyOrganizer.i"
+	@echo "... library/source/PartyOrganizer.s"
+	@echo "... library/source/Sitter.o"
+	@echo "... library/source/Sitter.i"
+	@echo "... library/source/Sitter.s"
+	@echo "... library/source/Tutor.o"
+	@echo "... library/source/Tutor.i"
+	@echo "... library/source/Tutor.s"
+	@echo "... library/source/UI.o"
+	@echo "... library/source/UI.i"
+	@echo "... library/source/UI.s"
+	@echo "... library/test/master.o"
+	@echo "... library/test/master.i"
+	@echo "... library/test/master.s"
+	@echo "... library/test/testManager.o"
+	@echo "... library/test/testManager.i"
+	@echo "... library/test/testManager.s"
+	@echo "... program/main.o"
+	@echo "... program/main.i"
+	@echo "... program/main.s"
 .PHONY : help
 
 

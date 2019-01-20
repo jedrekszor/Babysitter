@@ -1,4 +1,7 @@
-/home/jedrek/Desktop/Babysitter/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/home/jedrek/Desktop/Babysitter/cmake-build-debug/CMakeFiles/Babysitter.dir
-/home/jedrek/Desktop/Babysitter/cmake-build-debug/CMakeFiles/edit_cache.dir
-/home/jedrek/Desktop/Babysitter/cmake-build-debug/CMakeFiles/Babysitter_autogen.dir
+/home/antoni/Desktop/projects/OOP_babysitter/Babysitter/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/antoni/Desktop/projects/OOP_babysitter/Babysitter/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/antoni/Desktop/projects/OOP_babysitter/Babysitter/cmake-build-debug/CMakeFiles/test.dir
+/home/antoni/Desktop/projects/OOP_babysitter/Babysitter/cmake-build-debug/CMakeFiles/Babysitter.dir
+/home/antoni/Desktop/projects/OOP_babysitter/Babysitter/cmake-build-debug/CMakeFiles/TestBabysitter.dir
+/home/antoni/Desktop/projects/OOP_babysitter/Babysitter/cmake-build-debug/CMakeFiles/Babysitter_autogen.dir
+/home/antoni/Desktop/projects/OOP_babysitter/Babysitter/cmake-build-debug/CMakeFiles/TestBabysitter_autogen.dir
