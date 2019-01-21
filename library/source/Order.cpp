@@ -2,14 +2,9 @@
 
 using namespace std;
 
-Order::Order(std::string childName, int childAge, int month, int day, int service, int people)
+Order::Order(std::string childName, int childAge, int month, int day, int service, int people): _childName(childName), _childAge(childAge), _month(month), _day(day), _service(service), _people(people)
 {
-    this->_childName = childName;
-    this->_childAge = childAge;
-    this->_month = month;
-    this->_day = day;
-    this->_service = service;
-    this->_people = people;
+
 }
 
 string Order::getName()

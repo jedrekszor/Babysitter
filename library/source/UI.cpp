@@ -6,9 +6,9 @@ QStringList ages = {"1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12
 QStringList people = {"1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26", "27", "28", "29", "30"};
 QStringList options = {"Sittering", "Party organization", "Tutoring"};
 
-UI::UI(std::shared_ptr<Manager> manager, QWidget *parent): QWidget(parent)
+UI::UI(std::shared_ptr<Manager> manager, QWidget *parent): QWidget(parent), _manager(manager)
 {
-    this->_manager = manager;
+
 
 
     _name_l->setText("Child's name: ");

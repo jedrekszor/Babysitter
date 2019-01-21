@@ -4,7 +4,6 @@
 CMakeFiles/TestBabysitter.dir/TestBabysitter_autogen/mocs_compilation.cpp.o: TestBabysitter_autogen/CKNAYL4V2K/moc_UI.cpp
 CMakeFiles/TestBabysitter.dir/TestBabysitter_autogen/mocs_compilation.cpp.o: TestBabysitter_autogen/mocs_compilation.cpp
 CMakeFiles/TestBabysitter.dir/TestBabysitter_autogen/mocs_compilation.cpp.o: ../library/include/Babysitter.h
-CMakeFiles/TestBabysitter.dir/TestBabysitter_autogen/mocs_compilation.cpp.o: ../library/include/Childsitter.h
 CMakeFiles/TestBabysitter.dir/TestBabysitter_autogen/mocs_compilation.cpp.o: ../library/include/Manager.h
 CMakeFiles/TestBabysitter.dir/TestBabysitter_autogen/mocs_compilation.cpp.o: ../library/include/Order.h
 CMakeFiles/TestBabysitter.dir/TestBabysitter_autogen/mocs_compilation.cpp.o: ../library/include/PartyOrganizer.h
@@ -163,14 +162,7 @@ CMakeFiles/TestBabysitter.dir/library/source/Babysitter.cpp.o: ../library/includ
 CMakeFiles/TestBabysitter.dir/library/source/Babysitter.cpp.o: ../library/include/Sitter.h
 CMakeFiles/TestBabysitter.dir/library/source/Babysitter.cpp.o: ../library/source/Babysitter.cpp
 
-CMakeFiles/TestBabysitter.dir/library/source/Childsitter.cpp.o: ../library/include/Babysitter.h
-CMakeFiles/TestBabysitter.dir/library/source/Childsitter.cpp.o: ../library/include/Childsitter.h
-CMakeFiles/TestBabysitter.dir/library/source/Childsitter.cpp.o: ../library/include/Order.h
-CMakeFiles/TestBabysitter.dir/library/source/Childsitter.cpp.o: ../library/include/Sitter.h
-CMakeFiles/TestBabysitter.dir/library/source/Childsitter.cpp.o: ../library/source/Childsitter.cpp
-
 CMakeFiles/TestBabysitter.dir/library/source/Manager.cpp.o: ../library/include/Babysitter.h
-CMakeFiles/TestBabysitter.dir/library/source/Manager.cpp.o: ../library/include/Childsitter.h
 CMakeFiles/TestBabysitter.dir/library/source/Manager.cpp.o: ../library/include/Manager.h
 CMakeFiles/TestBabysitter.dir/library/source/Manager.cpp.o: ../library/include/Order.h
 CMakeFiles/TestBabysitter.dir/library/source/Manager.cpp.o: ../library/include/PartyOrganizer.h
@@ -343,7 +335,6 @@ CMakeFiles/TestBabysitter.dir/library/source/Tutor.cpp.o: ../library/include/Tut
 CMakeFiles/TestBabysitter.dir/library/source/Tutor.cpp.o: ../library/source/Tutor.cpp
 
 CMakeFiles/TestBabysitter.dir/library/source/UI.cpp.o: ../library/include/Babysitter.h
-CMakeFiles/TestBabysitter.dir/library/source/UI.cpp.o: ../library/include/Childsitter.h
 CMakeFiles/TestBabysitter.dir/library/source/UI.cpp.o: ../library/include/Manager.h
 CMakeFiles/TestBabysitter.dir/library/source/UI.cpp.o: ../library/include/Order.h
 CMakeFiles/TestBabysitter.dir/library/source/UI.cpp.o: ../library/include/PartyOrganizer.h
@@ -499,7 +490,6 @@ CMakeFiles/TestBabysitter.dir/library/source/UI.cpp.o: /usr/include/x86_64-linux
 CMakeFiles/TestBabysitter.dir/library/source/UI.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qwidget.h
 
 CMakeFiles/TestBabysitter.dir/library/test/master.cpp.o: ../library/include/Babysitter.h
-CMakeFiles/TestBabysitter.dir/library/test/master.cpp.o: ../library/include/Childsitter.h
 CMakeFiles/TestBabysitter.dir/library/test/master.cpp.o: ../library/include/Manager.h
 CMakeFiles/TestBabysitter.dir/library/test/master.cpp.o: ../library/include/Order.h
 CMakeFiles/TestBabysitter.dir/library/test/master.cpp.o: ../library/include/PartyOrganizer.h
@@ -655,7 +645,6 @@ CMakeFiles/TestBabysitter.dir/library/test/master.cpp.o: /usr/include/x86_64-lin
 CMakeFiles/TestBabysitter.dir/library/test/master.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qwidget.h
 
 CMakeFiles/TestBabysitter.dir/library/test/testManager.cpp.o: ../library/include/Babysitter.h
-CMakeFiles/TestBabysitter.dir/library/test/testManager.cpp.o: ../library/include/Childsitter.h
 CMakeFiles/TestBabysitter.dir/library/test/testManager.cpp.o: ../library/include/Manager.h
 CMakeFiles/TestBabysitter.dir/library/test/testManager.cpp.o: ../library/include/Order.h
 CMakeFiles/TestBabysitter.dir/library/test/testManager.cpp.o: ../library/include/PartyOrganizer.h

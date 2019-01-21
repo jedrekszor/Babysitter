@@ -5,7 +5,6 @@ file(REMOVE_RECURSE
   "CMakeFiles/TestBabysitter_autogen.dir/AutogenOldSettings.txt"
   "CMakeFiles/Babysitter.dir/program/main.cpp.o"
   "CMakeFiles/Babysitter.dir/library/source/Babysitter.cpp.o"
-  "CMakeFiles/Babysitter.dir/library/source/Childsitter.cpp.o"
   "CMakeFiles/Babysitter.dir/library/source/Manager.cpp.o"
   "CMakeFiles/Babysitter.dir/library/source/Order.cpp.o"
   "CMakeFiles/Babysitter.dir/library/source/PartyOrganizer.cpp.o"

@@ -7,16 +7,6 @@ Babysitter::Babysitter(std::string name, int maxOrders, double wage, int minAge,
 
 }
 
-void Babysitter::dayCare()
-{
-    cout << "Daycare\n";
-}
-
-void Babysitter::takeToPark()
-{
-
-}
-
 bool Babysitter::canAccept(shared_ptr<Order> order)
 {
     if(order->getService() == 0)

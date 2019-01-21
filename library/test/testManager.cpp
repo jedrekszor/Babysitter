@@ -63,7 +63,7 @@ BOOST_AUTO_TEST_CASE( test_childsitter ) {
         shared_ptr<Order> order_childsitter3(new Order("kid", 0, 0, 0, 1, 1));
 
         Manager test_manager;
-        Childsitter test("childsitter", 10, 5, 5, 10, 8, 5);
+        Babysitter test("babysitter", 10, 5, 5, 10, 8, 5);
 
         test_manager.setCurrent(order_childsitter1);
         //service id is ok but test not satisfies requirements
@@ -89,7 +89,7 @@ BOOST_AUTO_TEST_CASE( test_babysitter ){
         shared_ptr<Order> order_babysitter3(new Order("kid", 0, 0, 0, 1, 1));
 
         Manager test_manager;
-        Childsitter test("babysitter", 10, 5, 5, 10, 8, 5);
+        Babysitter test("babysitter", 10, 5, 5, 10, 8, 5);
 
         test_manager.setCurrent(order_babysitter1);
         //service id is ok but test not satisfies requirements

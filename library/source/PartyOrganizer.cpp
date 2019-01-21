@@ -8,21 +8,6 @@ PartyOrganizer::PartyOrganizer(std::string name, int maxOrders, double wage, int
 
 }
 
-void PartyOrganizer::birthday()
-{
-
-}
-
-void PartyOrganizer::carnival()
-{
-
-}
-
-void PartyOrganizer::quinceanera()
-{
-
-}
-
 bool PartyOrganizer::canAccept(shared_ptr<Order> order)
 {
     if(order->getService() == 1)

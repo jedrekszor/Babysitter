@@ -2,13 +2,7 @@
 
 using namespace std;
 
-Tutor::Tutor(std::string name, int maxOrders, double wage, int minAge, int maxAge, double rating, int maxPeople, string subject1, string subject2): Sitter(name, maxOrders, wage, minAge, maxAge, rating, maxPeople)
-{
-    this->_subject1 = subject1;
-    this->_subject2 = subject2;
-}
-
-void Tutor::teach()
+Tutor::Tutor(std::string name, int maxOrders, double wage, int minAge, int maxAge, double rating, int maxPeople, string subject1, string subject2): Sitter(name, maxOrders, wage, minAge, maxAge, rating, maxPeople), _subject1(subject1), _subject2(subject2)
 {
 
 }

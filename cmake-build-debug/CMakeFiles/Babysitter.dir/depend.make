@@ -4,7 +4,6 @@
 CMakeFiles/Babysitter.dir/Babysitter_autogen/mocs_compilation.cpp.o: Babysitter_autogen/CKNAYL4V2K/moc_UI.cpp
 CMakeFiles/Babysitter.dir/Babysitter_autogen/mocs_compilation.cpp.o: Babysitter_autogen/mocs_compilation.cpp
 CMakeFiles/Babysitter.dir/Babysitter_autogen/mocs_compilation.cpp.o: ../library/include/Babysitter.h
-CMakeFiles/Babysitter.dir/Babysitter_autogen/mocs_compilation.cpp.o: ../library/include/Childsitter.h
 CMakeFiles/Babysitter.dir/Babysitter_autogen/mocs_compilation.cpp.o: ../library/include/Manager.h
 CMakeFiles/Babysitter.dir/Babysitter_autogen/mocs_compilation.cpp.o: ../library/include/Order.h
 CMakeFiles/Babysitter.dir/Babysitter_autogen/mocs_compilation.cpp.o: ../library/include/PartyOrganizer.h
@@ -163,14 +162,7 @@ CMakeFiles/Babysitter.dir/library/source/Babysitter.cpp.o: ../library/include/Or
 CMakeFiles/Babysitter.dir/library/source/Babysitter.cpp.o: ../library/include/Sitter.h
 CMakeFiles/Babysitter.dir/library/source/Babysitter.cpp.o: ../library/source/Babysitter.cpp
 
-CMakeFiles/Babysitter.dir/library/source/Childsitter.cpp.o: ../library/include/Babysitter.h
-CMakeFiles/Babysitter.dir/library/source/Childsitter.cpp.o: ../library/include/Childsitter.h
-CMakeFiles/Babysitter.dir/library/source/Childsitter.cpp.o: ../library/include/Order.h
-CMakeFiles/Babysitter.dir/library/source/Childsitter.cpp.o: ../library/include/Sitter.h
-CMakeFiles/Babysitter.dir/library/source/Childsitter.cpp.o: ../library/source/Childsitter.cpp
-
 CMakeFiles/Babysitter.dir/library/source/Manager.cpp.o: ../library/include/Babysitter.h
-CMakeFiles/Babysitter.dir/library/source/Manager.cpp.o: ../library/include/Childsitter.h
 CMakeFiles/Babysitter.dir/library/source/Manager.cpp.o: ../library/include/Manager.h
 CMakeFiles/Babysitter.dir/library/source/Manager.cpp.o: ../library/include/Order.h
 CMakeFiles/Babysitter.dir/library/source/Manager.cpp.o: ../library/include/PartyOrganizer.h
@@ -343,7 +335,6 @@ CMakeFiles/Babysitter.dir/library/source/Tutor.cpp.o: ../library/include/Tutor.h
 CMakeFiles/Babysitter.dir/library/source/Tutor.cpp.o: ../library/source/Tutor.cpp
 
 CMakeFiles/Babysitter.dir/library/source/UI.cpp.o: ../library/include/Babysitter.h
-CMakeFiles/Babysitter.dir/library/source/UI.cpp.o: ../library/include/Childsitter.h
 CMakeFiles/Babysitter.dir/library/source/UI.cpp.o: ../library/include/Manager.h
 CMakeFiles/Babysitter.dir/library/source/UI.cpp.o: ../library/include/Order.h
 CMakeFiles/Babysitter.dir/library/source/UI.cpp.o: ../library/include/PartyOrganizer.h
@@ -499,7 +490,6 @@ CMakeFiles/Babysitter.dir/library/source/UI.cpp.o: /usr/include/x86_64-linux-gnu
 CMakeFiles/Babysitter.dir/library/source/UI.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qwidget.h
 
 CMakeFiles/Babysitter.dir/program/main.cpp.o: ../library/include/Babysitter.h
-CMakeFiles/Babysitter.dir/program/main.cpp.o: ../library/include/Childsitter.h
 CMakeFiles/Babysitter.dir/program/main.cpp.o: ../library/include/Manager.h
 CMakeFiles/Babysitter.dir/program/main.cpp.o: ../library/include/Order.h
 CMakeFiles/Babysitter.dir/program/main.cpp.o: ../library/include/PartyOrganizer.h

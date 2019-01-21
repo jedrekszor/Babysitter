@@ -9,7 +9,6 @@ find_package(Qt5Core)
 
 set(SOURCE_FILES
         library/source/Babysitter.cpp
-        library/source/Childsitter.cpp
         library/source/Manager.cpp
         library/source/Order.cpp
         library/source/PartyOrganizer.cpp
@@ -19,7 +18,6 @@ set(SOURCE_FILES
 
 set(INCLUDE_FILES
         library/include/Babysitter.h
-        library/include/Childsitter.h
         library/include/Manager.h
         library/include/Order.h
         library/include/PartyOrganizer.h
@@ -29,7 +27,6 @@ set(INCLUDE_FILES
 
 set(LOGS_FILES
         program/logs/babysitters.txt
-        program/logs/childsitters.txt
         program/logs/tutors.txt
         program/logs/partyOrganizers.txt
         program/logs/calendar.txt)

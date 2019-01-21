@@ -3,7 +3,6 @@
 #include <boost/test/unit_test.hpp>
 
 #include "../include/Manager.h"
-#include "../include/Childsitter.h"
 #include "../include/Babysitter.h"
 #include "../include/Order.h"
 #include "../include/PartyOrganizer.h"

@@ -1,14 +1,8 @@
 #include "../include/Sitter.h"
 
-Sitter::Sitter(std::string name, int maxOrders, double wage, int minAge, int maxAge, double rating, int maxPeople)
+Sitter::Sitter(std::string name, int maxOrders, double wage, int minAge, int maxAge, double rating, int maxPeople): _name(name), _maxOrders(maxOrders), _wage(wage), _minAge(minAge), _maxAge(maxAge), _rating(rating), _maxPeople(maxPeople)
 {
-    this->_name = name;
-    this->_maxOrders = maxOrders;
-    this->_wage = wage;
-    this->_minAge = minAge;
-    this->_maxAge = maxAge;
-    this->_rating = rating;
-    this->_maxPeople = maxPeople;
+
 }
 
 Sitter::~Sitter()
