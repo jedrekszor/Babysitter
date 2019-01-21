@@ -1,7 +1,7 @@
-/snap/clion/58/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /home/jedrek/Desktop/Babysitter
+/snap/clion/58/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /home/antoni/Desktop/projects/OOP_babysitter/Babysitter
 -- Boost version: 1.65.1
 -- Found the following Boost libraries:
 --   unit_test_framework
 -- Configuring done
 -- Generating done
--- Build files have been written to: /home/jedrek/Desktop/Babysitter/cmake-build-debug
+-- Build files have been written to: /home/antoni/Desktop/projects/OOP_babysitter/Babysitter/cmake-build-debug

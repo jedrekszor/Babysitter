@@ -11,7 +11,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/TestBabysitter.dir/library/source/Tutor.cpp.o"
   "CMakeFiles/TestBabysitter.dir/library/source/UI.cpp.o"
   "CMakeFiles/TestBabysitter.dir/library/test/master.cpp.o"
-  "CMakeFiles/TestBabysitter.dir/library/test/testManager.cpp.o"
+  "CMakeFiles/TestBabysitter.dir/library/test/test.cpp.o"
   "CMakeFiles/TestBabysitter.dir/TestBabysitter_autogen/mocs_compilation.cpp.o"
   "TestBabysitter.pdb"
   "TestBabysitter"

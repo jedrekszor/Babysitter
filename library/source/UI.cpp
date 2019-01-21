@@ -1,5 +1,6 @@
 #include "../include/UI.h"
 
+//define lists used in Comboboxes
 QStringList months = {"January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"};
 QStringList days = {"1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26", "27", "28", "29", "30", "31"};
 QStringList ages = {"1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18"};
@@ -8,9 +9,6 @@ QStringList options = {"Sittering", "Party organization", "Tutoring"};
 
 UI::UI(std::shared_ptr<Manager> manager, QWidget *parent): QWidget(parent), _manager(manager)
 {
-
-
-
     _name_l->setText("Child's name: ");
     _name_e->setPlaceholderText("Enter child's name");
 
@@ -31,7 +29,6 @@ UI::UI(std::shared_ptr<Manager> manager, QWidget *parent): QWidget(parent), _man
 
     _create->setText("Save");
 
-
     _layout->addRow(_name_l, _name_e);
     _layout->addRow(_age_l, _age_b);
     _layout->addRow(_month_l, _month_b);
@@ -49,7 +46,7 @@ void UI::saveOrder()
 {
     if(_name_e->text().length() > 0)
     {
-        if(((_month_b->currentIndex()+1 == 2) && (_day_b->currentIndex()+1 > 28)) || (((_month_b->currentIndex()+1 == 4) || (_month_b->currentIndex()+1 == 6) || (_month_b->currentIndex()+1 == 9) || (_month_b->currentIndex()+1 == 11)) && (_day_b->currentIndex()+1 > 30)))
+        if(((_month_b->currentIndex() + 1 == 2) && (_day_b->currentIndex()+1 > 28)) || (((_month_b->currentIndex()+1 == 4) || (_month_b->currentIndex()+1 == 6) || (_month_b->currentIndex()+1 == 9) || (_month_b->currentIndex()+1 == 11)) && (_day_b->currentIndex()+1 > 30)))
         {
             _box->setText("No such date!");
             _box->exec();
@@ -75,7 +72,6 @@ void UI::saveOrder()
 
 
             match();
-
         }
     }
     else
@@ -136,8 +132,6 @@ void UI::match()
 
         connect(_book, SIGNAL(clicked()), this, SLOT(addOrder()));
     }
-
-
     this->setLayout(_layout);
 }
 

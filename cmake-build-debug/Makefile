@@ -48,10 +48,10 @@ RM = /snap/clion/58/bin/cmake/linux/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/jedrek/Desktop/Babysitter
+CMAKE_SOURCE_DIR = /home/antoni/Desktop/projects/OOP_babysitter/Babysitter
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/jedrek/Desktop/Babysitter/cmake-build-debug
+CMAKE_BINARY_DIR = /home/antoni/Desktop/projects/OOP_babysitter/Babysitter/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -91,9 +91,9 @@ test/fast: test
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/jedrek/Desktop/Babysitter/cmake-build-debug/CMakeFiles /home/jedrek/Desktop/Babysitter/cmake-build-debug/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/antoni/Desktop/projects/OOP_babysitter/Babysitter/cmake-build-debug/CMakeFiles /home/antoni/Desktop/projects/OOP_babysitter/Babysitter/cmake-build-debug/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/jedrek/Desktop/Babysitter/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/antoni/Desktop/projects/OOP_babysitter/Babysitter/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -464,32 +464,32 @@ library/test/master.cpp.s:
 	$(MAKE) -f CMakeFiles/TestBabysitter.dir/build.make CMakeFiles/TestBabysitter.dir/library/test/master.cpp.s
 .PHONY : library/test/master.cpp.s
 
-library/test/testManager.o: library/test/testManager.cpp.o
+library/test/test.o: library/test/test.cpp.o
 
-.PHONY : library/test/testManager.o
+.PHONY : library/test/test.o
 
 # target to build an object file
-library/test/testManager.cpp.o:
-	$(MAKE) -f CMakeFiles/TestBabysitter.dir/build.make CMakeFiles/TestBabysitter.dir/library/test/testManager.cpp.o
-.PHONY : library/test/testManager.cpp.o
+library/test/test.cpp.o:
+	$(MAKE) -f CMakeFiles/TestBabysitter.dir/build.make CMakeFiles/TestBabysitter.dir/library/test/test.cpp.o
+.PHONY : library/test/test.cpp.o
 
-library/test/testManager.i: library/test/testManager.cpp.i
+library/test/test.i: library/test/test.cpp.i
 
-.PHONY : library/test/testManager.i
+.PHONY : library/test/test.i
 
 # target to preprocess a source file
-library/test/testManager.cpp.i:
-	$(MAKE) -f CMakeFiles/TestBabysitter.dir/build.make CMakeFiles/TestBabysitter.dir/library/test/testManager.cpp.i
-.PHONY : library/test/testManager.cpp.i
+library/test/test.cpp.i:
+	$(MAKE) -f CMakeFiles/TestBabysitter.dir/build.make CMakeFiles/TestBabysitter.dir/library/test/test.cpp.i
+.PHONY : library/test/test.cpp.i
 
-library/test/testManager.s: library/test/testManager.cpp.s
+library/test/test.s: library/test/test.cpp.s
 
-.PHONY : library/test/testManager.s
+.PHONY : library/test/test.s
 
 # target to generate assembly for a file
-library/test/testManager.cpp.s:
-	$(MAKE) -f CMakeFiles/TestBabysitter.dir/build.make CMakeFiles/TestBabysitter.dir/library/test/testManager.cpp.s
-.PHONY : library/test/testManager.cpp.s
+library/test/test.cpp.s:
+	$(MAKE) -f CMakeFiles/TestBabysitter.dir/build.make CMakeFiles/TestBabysitter.dir/library/test/test.cpp.s
+.PHONY : library/test/test.cpp.s
 
 program/main.o: program/main.cpp.o
 
@@ -561,9 +561,9 @@ help:
 	@echo "... library/test/master.o"
 	@echo "... library/test/master.i"
 	@echo "... library/test/master.s"
-	@echo "... library/test/testManager.o"
-	@echo "... library/test/testManager.i"
-	@echo "... library/test/testManager.s"
+	@echo "... library/test/test.o"
+	@echo "... library/test/test.i"
+	@echo "... library/test/test.s"
 	@echo "... program/main.o"
 	@echo "... program/main.i"
 	@echo "... program/main.s"

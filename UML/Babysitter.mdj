@@ -1723,7 +1723,7 @@
 											"top": 169,
 											"width": 559.61572265625,
 											"height": 13,
-											"text": "+_people: int",
+											"text": "-_people: int",
 											"horizontalAlignment": 0
 										}
 									],
@@ -5065,6 +5065,7 @@
 								"$ref": "AAAAAAFnu/C/NNEDD2E="
 							},
 							"name": "_people",
+							"visibility": "private",
 							"type": "int"
 						}
 					],

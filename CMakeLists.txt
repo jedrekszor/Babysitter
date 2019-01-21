@@ -33,7 +33,7 @@ set(LOGS_FILES
 
 set(TEST_FILES
         library/test/master.cpp
-        library/test/testManager.cpp)
+        library/test/test.cpp)
 
 add_executable(Babysitter
 

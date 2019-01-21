@@ -19,7 +19,7 @@ bool Babysitter::canAccept(shared_ptr<Order> order)
                 {
                     fstream file;
                     string line;
-                    file.open("../logs/calendar.txt", ios::in);
+                    file.open("../program/logs/calendar.txt", ios::in);
 
                     if (file.good())
                     {
